@@ -2,7 +2,26 @@
 
 :root {
   --title-orange: #ffaa4c;
-  --background-grey: #282a3a;
+  --background-grey: #242424;
+
+  font-family: 'Trebuchet MS', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--background-grey);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Colours */
+
+.greyBackground {
+  background-color: var(--background-grey);
 }
 
 /* Layout */
