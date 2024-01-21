@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
-import './App.css';
+import './styles/App.css';
 
 function App() {
   const observer = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
+    observer.current = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
@@ -16,7 +16,7 @@ function App() {
     });
 
     const hiddenElements = document.querySelectorAll('.hidden');
-    hiddenElements.forEach((element) => observer.observe(element));
+    hiddenElements.forEach((element) => observer.current!.observe(element));
   });
 
   return (
