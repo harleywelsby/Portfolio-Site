@@ -1,0 +1,52 @@
+/* HTML attributes */
+
+:root {
+  --title-orange: #ffaa4c;
+  --background-grey: #282a3a;
+}
+
+/* Layout */
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.paddedSection {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.verticalCenter {
+  display: flex;
+  align-items: center;
+}
+
+/* Text */
+
+.nameText {
+  color: var(--title-orange);
+  margin-bottom: 0.3rem;
+  margin-top: 10rem;
+}
+
+.roleText {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.webTitle {
+  font-size: 5.5rem;
+}
+
+.webSubTitle {
+  font-size: 2.5rem;
+}
+
+/* Images */
+
+.profilePhoto {
+  display: flex;
+  border-radius: 10%;
+  margin-right: 6rem;
+}
