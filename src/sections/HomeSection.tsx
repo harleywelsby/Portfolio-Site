@@ -6,10 +6,10 @@ function HomeSection() {
     <section className="hidden paddedBottom verticalCenter">
       <div className="horizontal">
         <div>
-          <NameText>Harley Welsby</NameText>
-          <RoleText>Full-Stack Software Developer</RoleText>
+          <NameText className="hidden">Harley Welsby</NameText>
+          <RoleText className="typewriter">Full-Stack Software Developer</RoleText>
         </div>
-        <HeadshotImage src="src/assets/harleyHeadshot.webp" loading="eager" />
+        <HeadshotImage className="hidden" src="src/assets/harleyHeadshot.webp" loading="eager" />
       </div>
     </section>
   );

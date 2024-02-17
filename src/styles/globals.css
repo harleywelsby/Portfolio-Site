@@ -44,26 +44,23 @@
   align-items: center;
 }
 
-/* Text */
+/* Typewriter text effect - See below */
+/* https://css-tricks.com/snippets/css/typewriter-effect/ */
 
-.mobileTitle {
-  font-size: 2.5rem;
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 2.5s steps(40, end);
 }
 
-.mobileSubTitle {
-  font-size: 1rem;
-}
-
-/* Images */
-
-.webProfilePhoto {
-  display: flex;
-  border-radius: 10%;
-  margin-left: 6rem;
-}
-
-.mobileProfilePhoto {
-  display: flex;
-  border-radius: 10%;
-  margin-left: 0.5rem;
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
