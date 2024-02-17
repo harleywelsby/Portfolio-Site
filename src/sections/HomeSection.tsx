@@ -4,17 +4,17 @@ function HomeSection() {
   return (
     <section className="hidden paddedSection verticalCenter">
       <div className="horizontal">
-        <img
-          className="profilePhoto"
-          src="src/assets/harleyProfile.jpg"
-          width={474}
-          height={600}
-          loading="eager"
-        />
         <div>
           <h1 className="nameText webTitle">Harley Welsby</h1>
           <p className="roleText webSubTitle">Full-Stack Software Developer</p>
         </div>
+        <img
+          className="profilePhoto"
+          src="src/assets/harleyHeadshot.webp"
+          width={400}
+          height={400}
+          loading="eager"
+        />
       </div>
     </section>
   );
