@@ -31,9 +31,12 @@
   flex-direction: row;
 }
 
-.paddedSection {
-  padding-top: 5rem;
+.paddedBottom {
   padding-bottom: 5rem;
+}
+
+.paddedTop {
+  padding-top: 5rem;
 }
 
 .verticalCenter {
