@@ -1,20 +1,15 @@
 import '../styles/globals.css';
+import { HeadshotImage, NameText, RoleText } from '../styles/styledComponents';
 
 function HomeSection() {
   return (
     <section className="hidden paddedSection verticalCenter">
       <div className="horizontal">
         <div>
-          <h1 className="nameText webTitle">Harley Welsby</h1>
-          <p className="roleText webSubTitle">Full-Stack Software Developer</p>
+          <NameText>Harley Welsby</NameText>
+          <RoleText>Full-Stack Software Developer</RoleText>
         </div>
-        <img
-          className="profilePhoto"
-          src="src/assets/harleyHeadshot.webp"
-          width={400}
-          height={400}
-          loading="eager"
-        />
+        <HeadshotImage src="src/assets/harleyHeadshot.webp" loading="eager" />
       </div>
     </section>
   );

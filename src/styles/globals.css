@@ -43,29 +43,24 @@
 
 /* Text */
 
-.nameText {
-  color: var(--title-orange);
-  margin-bottom: 0.3rem;
-  margin-top: 10rem;
-}
-
-.roleText {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-.webTitle {
-  font-size: 5.5rem;
-}
-
-.webSubTitle {
+.mobileTitle {
   font-size: 2.5rem;
+}
+
+.mobileSubTitle {
+  font-size: 1rem;
 }
 
 /* Images */
 
-.profilePhoto {
+.webProfilePhoto {
   display: flex;
   border-radius: 10%;
   margin-left: 6rem;
+}
+
+.mobileProfilePhoto {
+  display: flex;
+  border-radius: 10%;
+  margin-left: 0.5rem;
 }

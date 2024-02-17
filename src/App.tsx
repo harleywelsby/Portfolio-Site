@@ -4,7 +4,6 @@ import HomeSection from './sections/HomeSection';
 
 function App() {
   const observer = useRef<IntersectionObserver | null>(null);
-
   useEffect(() => {
     observer.current = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
