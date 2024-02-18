@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import HomeSection from './sections/HomeSection';
-import { Section } from './styles/styledComponents';
+import AboutSection from './sections/AboutSection';
 
 function App() {
   const observer = useRef<IntersectionObserver | null>(null);
@@ -17,15 +17,12 @@ function App() {
 
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((element) => observer.current!.observe(element));
-  });
+  }, []);
 
   return (
     <>
       <HomeSection />
-      <Section className="hidden whiteBackground">
-        <h1>Test Title</h1>
-        <p>Lorem Ipsum</p>
-      </Section>
+      <AboutSection />
       <section className="hidden">
         <h1>Test Title</h1>
         <p>Lorem Ipsum</p>

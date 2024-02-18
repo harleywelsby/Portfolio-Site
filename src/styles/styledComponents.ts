@@ -15,6 +15,12 @@ export const RoleText = styled.p`
   font-size: ${isMobile ? '0.8rem' : '2.5rem'};
 `;
 
+export const SectionTitle = styled.h1`
+  color: var(--background-grey);
+  font-size: ${isMobile ? '2rem' : '5rem'};
+  margin-bottom: 1rem;
+`;
+
 /* Images */
 
 export const HeadshotImage = styled.img`
@@ -36,9 +42,12 @@ export const HeaderSection = styled.section`
 `;
 
 export const Section = styled.section`
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  min-height: 90vh;
+  ${isMobile ? '' : 'margin: 0 -16.9vw;'}// Bad and hacky, but extends background colour to edges
 `;
 
 /* Layouts */
