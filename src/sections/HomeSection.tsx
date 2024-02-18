@@ -7,7 +7,7 @@ function HomeSection() {
       <div className="horizontal">
         <div>
           <NameText className="hidden">Harley Welsby</NameText>
-          <RoleText className="typewriter">Full-Stack Software Developer</RoleText>
+          <RoleText className="hidden typewriter">Full-Stack Software Developer</RoleText>
         </div>
         <HeadshotImage className="hidden" src="src/assets/harleyHeadshot.webp" loading="eager" />
       </div>
