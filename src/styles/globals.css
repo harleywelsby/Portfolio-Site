@@ -102,3 +102,22 @@ h1 {
 .show {
   opacity: 1;
 }
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-grey);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--title-orange);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffaa4c;
+}
