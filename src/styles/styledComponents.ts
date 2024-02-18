@@ -32,6 +32,7 @@ export const HeaderSection = styled.section`
   padding-bottom: ${isMobile ? '3rem' : '5rem'};
   display: flex;
   align-items: center;
+  height: ${isMobile ? '10vh' : '80vh'};
 `;
 
 export const Section = styled.section`
