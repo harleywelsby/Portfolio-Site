@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
-import './styles/App.css';
 import HomeSection from './sections/HomeSection';
+import { Section } from './styles/styledComponents';
 
 function App() {
   const observer = useRef<IntersectionObserver | null>(null);
@@ -22,10 +22,10 @@ function App() {
   return (
     <>
       <HomeSection />
-      <section className="hidden whiteBackground">
+      <Section className="hidden whiteBackground">
         <h1>Test Title</h1>
         <p>Lorem Ipsum</p>
-      </section>
+      </Section>
       <section className="hidden">
         <h1>Test Title</h1>
         <p>Lorem Ipsum</p>

@@ -1,17 +1,23 @@
 import '../styles/globals.css';
-import { HeadshotImage, NameText, RoleText } from '../styles/styledComponents';
+import {
+  HeaderSection,
+  HeadshotImage,
+  HorizontalFlexBox,
+  NameText,
+  RoleText,
+} from '../styles/styledComponents';
 
 function HomeSection() {
   return (
-    <section className="hidden paddedBottom verticalCenter padded">
-      <div className="horizontal">
+    <HeaderSection className="hidden">
+      <HorizontalFlexBox>
         <div>
           <NameText className="hidden">Harley Welsby</NameText>
           <RoleText className="hidden typewriter">Full-Stack Software Developer</RoleText>
         </div>
         <HeadshotImage className="hidden" src="src/assets/harleyHeadshot.webp" loading="eager" />
-      </div>
-    </section>
+      </HorizontalFlexBox>
+    </HeaderSection>
   );
 }
 

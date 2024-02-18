@@ -24,3 +24,25 @@ export const HeadshotImage = styled.img`
   width: ${isMobile ? '120px' : '400px'};
   height: ${isMobile ? '120px' : '400px'};
 `;
+
+/* Sections */
+
+export const HeaderSection = styled.section`
+  padding: 2rem;
+  padding-bottom: ${isMobile ? '3rem' : '5rem'};
+  display: flex;
+  align-items: center;
+`;
+
+export const Section = styled.section`
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+`;
+
+/* Layouts */
+
+export const HorizontalFlexBox = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
