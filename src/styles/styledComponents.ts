@@ -6,7 +6,7 @@ import { isMobile } from 'react-device-detect';
 export const NameText = styled.h1`
   color: var(--title-orange);
   margin-bottom: 0.3rem;
-  margin-top: ${isMobile ? '0.5rem' : '8.5rem'};
+  margin-top: ${isMobile ? '2.5rem' : '8.5rem'};
   font-size: ${isMobile ? '2.5rem' : '5.5rem'};
 `;
 
