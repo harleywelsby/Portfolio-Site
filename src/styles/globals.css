@@ -24,6 +24,10 @@
   background-color: var(--background-grey);
 }
 
+.whiteBackground {
+  background-color: white;
+}
+
 /* Layout */
 
 .horizontal {
@@ -37,6 +41,10 @@
 
 .paddedTop {
   padding-top: 5rem;
+}
+
+.padded {
+  padding: 2rem;
 }
 
 .verticalCenter {

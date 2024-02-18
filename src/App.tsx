@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <HomeSection />
-      <section className="hidden">
+      <section className="hidden whiteBackground">
         <h1>Test Title</h1>
         <p>Lorem Ipsum</p>
       </section>

@@ -3,7 +3,7 @@ import { HeadshotImage, NameText, RoleText } from '../styles/styledComponents';
 
 function HomeSection() {
   return (
-    <section className="hidden paddedBottom verticalCenter">
+    <section className="hidden paddedBottom verticalCenter padded">
       <div className="horizontal">
         <div>
           <NameText className="hidden">Harley Welsby</NameText>
