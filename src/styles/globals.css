@@ -1,16 +1,16 @@
 /* HTML attributes */
 
 :root {
-  --title-orange: #ffaa4c;
-  --background-grey: #242424;
-  --alternate-background: #fff7f1;
+  --orange: #ffaa4c;
+  --black: #242424;
+  --white: #fff7f1;
 
   font-family: 'Trebuchet MS', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: dark;
-  background-color: var(--background-grey);
+  background-color: var(--black);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -43,21 +43,21 @@ a {
 /* Colours */
 
 .greyBackground {
-  background-color: var(--background-grey);
+  background-color: var(--black);
   color: rgba(255, 255, 255, 0.87);
 }
 
 .altBackground {
-  background-color: var(--alternate-background);
-  color: var(--background-grey);
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .lightThemeText {
-  color: var(--background-grey);
+  color: var(--black);
 }
 
 .darkThemeText {
-  color: var(--alternate-background);
+  color: var(--white);
 }
 
 /* Layout */
@@ -89,7 +89,7 @@ a {
 }
 
 .linkLogoHover {
-  color: var(--title-orange);
+  color: var(--orange);
 }
 
 /* Typewriter text effect - See below */
@@ -131,11 +131,11 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background-grey);
+  background: var(--black);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--title-orange);
+  background: var(--orange);
   border-radius: 10px;
 }
 

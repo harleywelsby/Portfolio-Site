@@ -4,7 +4,7 @@ import { isMobile } from 'react-device-detect';
 /* Text */
 
 export const NameText = styled.h1`
-  color: var(--title-orange);
+  color: var(--orange);
   margin-bottom: 0.3rem;
   margin-top: ${isMobile ? '2.5rem' : '8.5rem'};
   font-size: ${isMobile ? '2rem' : '5.5rem'};
@@ -16,7 +16,7 @@ export const RoleText = styled.p`
 `;
 
 export const SectionTitle = styled.h1`
-  color: var(--background-grey);
+  color: var(--black);
   font-size: ${isMobile ? '2rem' : '5rem'};
   margin-bottom: 1rem;
 `;
@@ -76,5 +76,5 @@ export const LinkLogoWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: ${isMobile ? '1rem' : '1rem 2rem'};
-  color: var(--background-grey);
+  color: var(--black);
 `;
