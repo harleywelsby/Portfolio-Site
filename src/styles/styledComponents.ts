@@ -16,9 +16,8 @@ export const RoleText = styled.p`
 `;
 
 export const SectionTitle = styled.h1`
-  color: var(--black);
   font-size: ${isMobile ? '2rem' : '5rem'};
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 `;
 
 export const ParagraphText = styled.p`
@@ -56,11 +55,13 @@ export const HeaderSection = styled.section`
 `;
 
 export const Section = styled.section`
-  padding: 1rem;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  ${isMobile ? '' : 'margin: 0 -16.9vw;'}// Bad and hacky, but extends background colour to edges
+
+  // This is bad and hacky, but without it the sections don't fill the screen responsively.
+  ${!isMobile && 'margin: 0 -16.9vw;'}
 `;
 
 /* Layouts */

@@ -20,12 +20,12 @@ import { isMobile } from 'react-device-detect';
 function AboutSection() {
   return (
     <Section className="hidden altBackground">
-      <SectionTitle className="hidden">About Me</SectionTitle>
+      <SectionTitle className="hidden lightThemeText">About Me</SectionTitle>
       <ParagraphText className="hidden lightThemeText">{ABOUT_ME_PARAGRAPH_1}</ParagraphText>
       <br />
       <ParagraphText className="hidden lightThemeText">{ABOUT_ME_PARAGRAPH_2}</ParagraphText>
       <br />
-      <HorizontalFlexBox className={`hidden ${!isMobile && 'paddedTop paddedBottom'}`}>
+      <HorizontalFlexBox className={`hidden smallMarginBottom ${!isMobile && 'paddedTop'}`}>
         <LinkLogo
           iconName={faLinkedin}
           link={LinkedinUrl}

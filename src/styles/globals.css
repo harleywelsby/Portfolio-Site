@@ -94,6 +94,10 @@ a {
   color: var(--orange);
 }
 
+.smallMarginBottom {
+  margin-bottom: 1rem;
+}
+
 /* Typewriter text effect - See below */
 /* https://css-tricks.com/snippets/css/typewriter-effect/ */
 

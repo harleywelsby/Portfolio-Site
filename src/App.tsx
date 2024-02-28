@@ -1,6 +1,9 @@
 import { useEffect, useRef } from 'react';
 import HomeSection from './sections/HomeSection';
 import AboutSection from './sections/AboutSection';
+import SkillsSection from './sections/SkillsSection';
+import PortfolioSection from './sections/PortfolioSection';
+import ResearchSection from './sections/ResearchSection';
 
 function App() {
   const observer = useRef<IntersectionObserver | null>(null);
@@ -23,34 +26,9 @@ function App() {
     <>
       <HomeSection />
       <AboutSection />
-      <section className="hidden">
-        <h1>Test Title</h1>
-        <p>Lorem Ipsum</p>
-      </section>
-      <section className="hidden">
-        <h1>Test Title</h1>
-        <p>Lorem Ipsum</p>
-      </section>
-      <section className="hidden">
-        <h1>Test Title</h1>
-        <p>Lorem Ipsum</p>
-      </section>
-      <section className="hidden">
-        <h1>Test Title</h1>
-        <p>Lorem Ipsum</p>
-      </section>
-      <section className="hidden">
-        <h1>Test Title</h1>
-        <p>Lorem Ipsum</p>
-      </section>
-      <section className="hidden">
-        <h1>Test Title</h1>
-        <p>Lorem Ipsum</p>
-      </section>
-      <section className="hidden">
-        <h1>Test Title</h1>
-        <p>Lorem Ipsum</p>
-      </section>
+      <SkillsSection />
+      <PortfolioSection />
+      <ResearchSection />
     </>
   );
 }
