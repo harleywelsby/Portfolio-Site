@@ -21,6 +21,15 @@ export const SectionTitle = styled.h1`
   margin-bottom: 1rem;
 `;
 
+export const ParagraphText = styled.p`
+  font-size: ${isMobile ? '1rem' : '1.5rem'};
+  max-width: ${isMobile ? '80%' : '50%'};
+  weight: 4;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+`;
+
 /* Images */
 
 export const HeadshotImage = styled.img`

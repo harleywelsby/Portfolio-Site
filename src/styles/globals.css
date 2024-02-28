@@ -30,6 +30,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -47,6 +48,14 @@ h1 {
 .altBackground {
   background-color: var(--alternate-background);
   color: var(--background-grey);
+}
+
+.lightThemeText {
+  color: var(--background-grey);
+}
+
+.darkThemeText {
+  color: var(--alternate-background);
 }
 
 /* Layout */
