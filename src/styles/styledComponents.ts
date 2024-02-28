@@ -55,7 +55,7 @@ export const HeaderSection = styled.section`
 `;
 
 export const Section = styled.section`
-  padding: 3rem 1rem;
+  padding: ${isMobile ? '1rem' : '3rem 1rem'};
   display: flex;
   flex-direction: column;
   align-items: center;

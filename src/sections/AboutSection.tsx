@@ -25,7 +25,7 @@ function AboutSection() {
       <br />
       <ParagraphText className="hidden lightThemeText">{ABOUT_ME_PARAGRAPH_2}</ParagraphText>
       <br />
-      <HorizontalFlexBox className={`hidden smallMarginBottom ${!isMobile && 'paddedTop'}`}>
+      <HorizontalFlexBox className={`hidden ${!isMobile && 'paddedTop smallMarginBottom'}`}>
         <LinkLogo
           iconName={faLinkedin}
           link={LinkedinUrl}
