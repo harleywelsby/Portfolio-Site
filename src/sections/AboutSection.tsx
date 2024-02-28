@@ -1,16 +1,39 @@
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import LinkLogo from '../components/LinkLogo';
 import '../styles/globals.css';
-import { ParagraphText, Section, SectionTitle } from '../styles/styledComponents';
-
-const ABOUT_ME_PARAGRAPH_1 = `Kia ora! I'm Harley, a Full-Stack Software Develeoper from Wellington, New Zealand. I'm passionate about designing and developing web applications with React and .NET, and I'm always up for a challenge. I love to work through and solve problems with code, and I'm always learning about anything and everything the tech world has to offer.`;
-const ABOUT_ME_PARAGRAPH_2 = `Feel free to reach out to me at the links below, or stay and scroll through my portfolio to see some of the cool stuff I've done!`;
+import {
+  HorizontalFlexBox,
+  ParagraphText,
+  Section,
+  SectionTitle,
+} from '../styles/styledComponents';
+import {
+  ABOUT_ME_PARAGRAPH_1,
+  ABOUT_ME_PARAGRAPH_2,
+  GithubLabel,
+  GithubUrl,
+  LinkedinLabel,
+  LinkedinUrl,
+} from '../constants';
 
 function AboutSection() {
   return (
     <Section className="hidden altBackground">
-      <SectionTitle>About Me</SectionTitle>
-      <ParagraphText className="lightThemeText">{ABOUT_ME_PARAGRAPH_1}</ParagraphText>
+      <SectionTitle className="hidden">About Me</SectionTitle>
+      <ParagraphText className="hidden lightThemeText">{ABOUT_ME_PARAGRAPH_1}</ParagraphText>
       <br />
-      <ParagraphText className="lightThemeText">{ABOUT_ME_PARAGRAPH_2}</ParagraphText>
+      <ParagraphText className="hidden lightThemeText">{ABOUT_ME_PARAGRAPH_2}</ParagraphText>
+      <br />
+      <HorizontalFlexBox className="hidden paddedTop">
+        <LinkLogo
+          iconName={faLinkedin}
+          link={LinkedinUrl}
+          label={LinkedinLabel}
+          newTab
+          size={'10x'}
+        />
+        <LinkLogo iconName={faGithub} link={GithubUrl} label={GithubLabel} newTab size={'10x'} />
+      </HorizontalFlexBox>
     </Section>
   );
 }

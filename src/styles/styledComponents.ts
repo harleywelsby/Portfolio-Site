@@ -30,6 +30,11 @@ export const ParagraphText = styled.p`
   text-align: left;
 `;
 
+export const LinkLogoLabel = styled.p`
+  margin: 0;
+  font-size: 1.5rem;
+`;
+
 /* Images */
 
 export const HeadshotImage = styled.img`
@@ -64,4 +69,13 @@ export const Section = styled.section`
 export const HorizontalFlexBox = styled.div`
   display: flex;
   flex-direction: row;
+`;
+
+export const LinkLogoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: ${isMobile ? '0.5rem' : '1rem 2rem'};
+  color: var(--background-grey);
 `;
