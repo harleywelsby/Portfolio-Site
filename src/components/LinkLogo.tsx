@@ -12,9 +12,6 @@ interface LinkLogoProps {
 }
 
 function LinkLogo({ iconName, link, label, newTab, size }: LinkLogoProps) {
-  // Custom hover check. We don't use :hover in CSS for this
-  // as doing it custom can make both the icon and label change
-  // colour at the same time.
   const [isHover, setIsHover] = useState<boolean>(false);
 
   return (

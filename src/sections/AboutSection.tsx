@@ -15,6 +15,7 @@ import {
   LinkedinLabel,
   LinkedinUrl,
 } from '../constants';
+import { isMobile } from 'react-device-detect';
 
 function AboutSection() {
   return (
@@ -24,15 +25,21 @@ function AboutSection() {
       <br />
       <ParagraphText className="hidden lightThemeText">{ABOUT_ME_PARAGRAPH_2}</ParagraphText>
       <br />
-      <HorizontalFlexBox className="hidden paddedTop">
+      <HorizontalFlexBox className={`hidden ${!isMobile && 'paddedTop paddedBottom'}`}>
         <LinkLogo
           iconName={faLinkedin}
           link={LinkedinUrl}
           label={LinkedinLabel}
           newTab
-          size={'10x'}
+          size={isMobile ? '5x' : '10x'}
         />
-        <LinkLogo iconName={faGithub} link={GithubUrl} label={GithubLabel} newTab size={'10x'} />
+        <LinkLogo
+          iconName={faGithub}
+          link={GithubUrl}
+          label={GithubLabel}
+          newTab
+          size={isMobile ? '5x' : '10x'}
+        />
       </HorizontalFlexBox>
     </Section>
   );

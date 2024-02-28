@@ -60,7 +60,6 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 90vh;
   ${isMobile ? '' : 'margin: 0 -16.9vw;'}// Bad and hacky, but extends background colour to edges
 `;
 
@@ -76,6 +75,6 @@ export const LinkLogoWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: ${isMobile ? '0.5rem' : '1rem 2rem'};
+  padding: ${isMobile ? '1rem' : '1rem 2rem'};
   color: var(--background-grey);
 `;
