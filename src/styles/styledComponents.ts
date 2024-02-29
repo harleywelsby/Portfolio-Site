@@ -36,7 +36,7 @@ export const LinkLogoLabel = styled.p`
 
 export const SkillLogoLabel = styled.p`
   margin: 0.2rem;
-  font-size: ${isMobile ? '1rem' : '1.5rem'};
+  font-size: ${isMobile ? '0.7rem' : '1.5rem'};
 `;
 
 /* Images */
@@ -107,7 +107,10 @@ export const SkillStack = styled.div`
   align-items: center;
   justify-content: center;
   background-color: var(--orange);
-  border-radius: 15%;
+  border-top-right-radius: 15% 5%;
+  border-top-left-radius: 15% 5%;
+  border-bottom-right-radius: 15% 5%;
+  border-bottom-left-radius: 15% 5%;
   padding: 1rem;
   margin: ${isMobile ? '0.5rem 0' : '1rem 3rem'};
   width: ${isMobile ? '4rem' : '15rem'};
