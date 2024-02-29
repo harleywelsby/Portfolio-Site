@@ -10,7 +10,7 @@ export const NameText = styled.h1`
   font-size: ${isMobile ? '2rem' : '5.5rem'};
 `;
 
-export const RoleText = styled.p`
+export const SubtitleText = styled.p`
   margin: 0;
   font-size: ${isMobile ? '0.8rem' : '2.5rem'};
 `;
@@ -71,6 +71,12 @@ export const HorizontalFlexBox = styled.div`
   flex-direction: row;
 `;
 
+export const VerticalFlexBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 0 ${isMobile ? '1rem' : '3rem'};
+`;
+
 export const LinkLogoWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -78,4 +84,16 @@ export const LinkLogoWrapper = styled.div`
   align-items: center;
   padding: ${isMobile ? '1rem' : '1rem 2rem'};
   color: var(--black);
+`;
+
+export const SkillStack = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--orange);
+  border-radius: 15%;
+  padding: 1rem;
+  margin: ${isMobile ? '0.5rem 0' : '1rem 3rem'};
+  width: ${isMobile ? '4rem' : '15rem'};
 `;

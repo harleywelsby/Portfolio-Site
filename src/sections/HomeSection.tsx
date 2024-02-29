@@ -4,7 +4,7 @@ import {
   HeadshotImage,
   HorizontalFlexBox,
   NameText,
-  RoleText,
+  SubtitleText,
 } from '../styles/styledComponents';
 
 function HomeSection() {
@@ -13,7 +13,7 @@ function HomeSection() {
       <HorizontalFlexBox>
         <div>
           <NameText className="hidden">Harley Welsby</NameText>
-          <RoleText className="hidden typewriter">Full-Stack Software Developer</RoleText>
+          <SubtitleText className="hidden typewriter">Full-Stack Software Developer</SubtitleText>
         </div>
         <HeadshotImage className="hidden" src="src/assets/harleyHeadshot.webp" loading="eager" />
       </HorizontalFlexBox>
