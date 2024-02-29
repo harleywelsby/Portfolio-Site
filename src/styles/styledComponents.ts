@@ -34,6 +34,11 @@ export const LinkLogoLabel = styled.p`
   font-size: 1.5rem;
 `;
 
+export const SkillLogoLabel = styled.p`
+  margin: 0.2rem;
+  font-size: ${isMobile ? '1rem' : '1.5rem'};
+`;
+
 /* Images */
 
 export const HeadshotImage = styled.img`
@@ -84,6 +89,16 @@ export const LinkLogoWrapper = styled.div`
   align-items: center;
   padding: ${isMobile ? '1rem' : '1rem 2rem'};
   color: var(--black);
+`;
+
+export const SkillLogoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: ${isMobile ? '1rem' : '1rem 2rem'};
+  color: var(--black);
+  ${!isMobile && 'margin: 0.5rem 0;'}
 `;
 
 export const SkillStack = styled.div`

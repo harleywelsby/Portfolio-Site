@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Icon SVGs (kept locally for simplicity, but only paths in constants.ts are used)
+src/assets/icons/*.svg

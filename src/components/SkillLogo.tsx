@@ -1,6 +1,11 @@
 import { IconDefinition, SizeProp } from '@fortawesome/fontawesome-svg-core';
 import { useState } from 'react';
-import { LinkLogoLabel, LinkLogoWrapper } from '../styles/styledComponents';
+import {
+  LinkLogoLabel,
+  LinkLogoWrapper,
+  SkillLogoLabel,
+  SkillLogoWrapper,
+} from '../styles/styledComponents';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface LinkLogoProps {
@@ -13,14 +18,14 @@ function SkillLogo({ icon, label, size }: LinkLogoProps) {
   const [isHover, setIsHover] = useState<boolean>(false);
 
   return (
-    <LinkLogoWrapper onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
+    <SkillLogoWrapper onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
       <FontAwesomeIcon
         className={`skillLogo ${isHover && 'skillLogoHover'}`}
         icon={icon}
         size={size}
       />{' '}
-      {isHover && <LinkLogoLabel className="skillLogoHover">{label}</LinkLogoLabel>}
-    </LinkLogoWrapper>
+      {isHover && <SkillLogoLabel className="skillLogoHover">{label}</SkillLogoLabel>}
+    </SkillLogoWrapper>
   );
 }
 
