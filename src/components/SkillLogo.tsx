@@ -23,7 +23,7 @@ function SkillLogo({ icon, label, size }: LinkLogoProps) {
         className={`skillLogo ${isHover && 'skillLogoHover'}`}
         icon={icon}
         size={size}
-      />{' '}
+      />
       {isHover && <SkillLogoLabel className="skillLogoHover">{label}</SkillLogoLabel>}
     </SkillLogoWrapper>
   );
