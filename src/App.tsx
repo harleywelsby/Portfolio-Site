@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react';
 import HomeSection from './sections/HomeSection';
 import AboutSection from './sections/AboutSection';
 import SkillsSection from './sections/SkillsSection';
-import PortfolioSection from './sections/PortfolioSection';
 import ResearchSection from './sections/ResearchSection';
 import FooterSection from './sections/FooterSection';
 
