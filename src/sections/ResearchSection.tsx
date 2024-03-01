@@ -26,7 +26,7 @@ function ResearchSection() {
       <br />
       <ParagraphText className="hidden">{RESEARCH_PARAGRAPH_2}</ParagraphText>
       <br />
-      <DemoImage className="hidden" src="src/assets/ResearchProjectDemo.jpg" loading="eager" />
+      <DemoImage className="hidden" src="ResearchProjectDemo.jpg" loading="eager" />
       <ImageReference className="hidden">{ProjectDemoImageReference}</ImageReference>
       <br />
       <ParagraphText className="hidden">{RESEARCH_PARAGRAPH_3}</ParagraphText>
