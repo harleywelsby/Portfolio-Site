@@ -53,10 +53,10 @@ export const ImageReference = styled.p`
 
 export const HeadshotImage = styled.img`
   border-radius: 40%;
-  margin-top: ${isMobile ? '0rem' : '0rem'};
-  margin-left: ${isMobile ? '0rem' : '5rem'};
-  width: ${isMobile ? '120px' : '400px'};
-  height: ${isMobile ? '120px' : '400px'};
+  margin-top: ${isMobile ? '1rem' : '0rem'};
+  margin-left: ${isMobile ? '1rem' : '5rem'};
+  width: ${isMobile ? '90px' : '400px'};
+  height: ${isMobile ? '90px' : '400px'};
   border-style: solid;
   border-color: var(--orange);
   border-width: ${isMobile ? '0.2rem' : '0.5rem'};
