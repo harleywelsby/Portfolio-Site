@@ -20,8 +20,8 @@ function ResearchSection() {
   // TODO: Unimplemented
 
   return (
-    <Section className="hidden">
-      <SectionTitle className="darkThemeText">Research</SectionTitle>
+    <Section className="hidden altBackground">
+      <SectionTitle className="lightThemeText">Research</SectionTitle>
       <ParagraphText className="hidden">{RESEARCH_PARAGRAPH_1}</ParagraphText>
       <br />
       <ParagraphText className="hidden">{RESEARCH_PARAGRAPH_2}</ParagraphText>

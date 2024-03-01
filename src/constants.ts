@@ -34,3 +34,6 @@ export const RESEARCH_PARAGRAPH_5 = `Overall the project was a fantastic opportu
 export const ProjectDemoImageReference = `The VR game I developed for the project, running on Eight360's Nova Motion Simulator emulator.`;
 export const ProjectReadMoreText = `If you want to learn more about this project, you can read my paper`;
 export const VuwResearchPaperUrl = 'https://ojs.victoria.ac.nz/wfes/article/view/8424/7478';
+
+// Footer Section
+export const GitHubPortfolioSiteUrl = `https://github.com/harleywelsby/Portfolio-Site`;

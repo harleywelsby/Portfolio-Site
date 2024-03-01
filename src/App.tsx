@@ -28,7 +28,8 @@ function App() {
       <HomeSection />
       <AboutSection />
       <SkillsSection />
-      <PortfolioSection />
+      {/* TODO: Add Portfolio from GitHub */}
+      {/* <PortfolioSection /> */}
       <ResearchSection />
       <FooterSection />
     </>
