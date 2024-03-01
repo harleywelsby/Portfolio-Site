@@ -79,7 +79,7 @@ export const HorizontalFlexBox = styled.div`
 export const VerticalFlexBox = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 ${isMobile ? '1rem' : '3rem'};
+  margin: 0 ${isMobile ? '0.5rem' : '3rem'};
 `;
 
 export const LinkLogoWrapper = styled.div`

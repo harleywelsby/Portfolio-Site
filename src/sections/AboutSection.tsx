@@ -10,7 +10,6 @@ import {
 import {
   ABOUT_ME_PARAGRAPH_1,
   ABOUT_ME_PARAGRAPH_2,
-  ABOUT_ME_PARAGRAPH_3,
   GithubLabel,
   GithubUrl,
   LinkedinLabel,
@@ -25,8 +24,6 @@ function AboutSection() {
       <ParagraphText className="hidden lightThemeText">{ABOUT_ME_PARAGRAPH_1}</ParagraphText>
       <br />
       <ParagraphText className="hidden lightThemeText">{ABOUT_ME_PARAGRAPH_2}</ParagraphText>
-      <br />
-      <ParagraphText className="hidden lightThemeText">{ABOUT_ME_PARAGRAPH_3}</ParagraphText>
       <br />
       <HorizontalFlexBox className={`hidden ${!isMobile && 'paddedTop smallMarginBottom'}`}>
         <LinkLogo
