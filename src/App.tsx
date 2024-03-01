@@ -4,6 +4,7 @@ import AboutSection from './sections/AboutSection';
 import SkillsSection from './sections/SkillsSection';
 import PortfolioSection from './sections/PortfolioSection';
 import ResearchSection from './sections/ResearchSection';
+import FooterSection from './sections/FooterSection';
 
 function App() {
   const observer = useRef<IntersectionObserver | null>(null);
@@ -29,6 +30,7 @@ function App() {
       <SkillsSection />
       <PortfolioSection />
       <ResearchSection />
+      <FooterSection />
     </>
   );
 }

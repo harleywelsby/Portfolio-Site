@@ -39,6 +39,16 @@ export const SkillLogoLabel = styled.p`
   font-size: ${isMobile ? '0.7rem' : '1.5rem'};
 `;
 
+export const ImageReference = styled.p`
+  font-size: ${isMobile ? '0.7rem' : '1rem'};
+  max-width: ${isMobile ? '80%' : '50%'};
+  weight: 4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+`;
+
 /* Images */
 
 export const HeadshotImage = styled.img`
@@ -47,6 +57,15 @@ export const HeadshotImage = styled.img`
   margin-left: ${isMobile ? '0rem' : '5rem'};
   width: ${isMobile ? '120px' : '400px'};
   height: ${isMobile ? '120px' : '400px'};
+`;
+
+export const DemoImage = styled.img`
+  border-top-right-radius: 10% 15%;
+  border-top-left-radius: 10% 15%;
+  border-bottom-right-radius: 10% 15%;
+  border-bottom-left-radius: 10% 15%;
+  margin: 1rem 0;
+  width: ${isMobile ? '80%' : '50%'};
 `;
 
 /* Sections */
