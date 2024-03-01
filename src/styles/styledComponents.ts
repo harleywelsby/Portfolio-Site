@@ -57,6 +57,9 @@ export const HeadshotImage = styled.img`
   margin-left: ${isMobile ? '0rem' : '5rem'};
   width: ${isMobile ? '120px' : '400px'};
   height: ${isMobile ? '120px' : '400px'};
+  border-style: solid;
+  border-color: var(--orange);
+  border-width: ${isMobile ? '0.2rem' : '0.5rem'};
 `;
 
 export const DemoImage = styled.img`

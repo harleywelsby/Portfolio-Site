@@ -15,7 +15,7 @@ function HomeSection() {
           <NameText className="hidden">Harley Welsby</NameText>
           <SubtitleText className="hidden typewriter">Full-Stack Software Developer</SubtitleText>
         </div>
-        <HeadshotImage className="hidden" src="src/assets/harleyHeadshot.webp" loading="eager" />
+        <HeadshotImage className="hidden" src="src/assets/harleyHeadshot.jpg" loading="eager" />
       </HorizontalFlexBox>
     </HeaderSection>
   );
