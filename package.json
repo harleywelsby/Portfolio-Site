@@ -30,6 +30,6 @@
     "prettier": "^3.2.5",
     "styled-components": "^6.1.8",
     "typescript": "^5.2.2",
-    "vite": "^5.1.4"
+    "vite": "^5.1.6"
   }
 }
