@@ -7,12 +7,12 @@ export const NameText = styled.h1`
   color: var(--orange);
   margin-bottom: 0.3rem;
   margin-top: ${isMobile ? '2.5rem' : '8.5rem'};
-  font-size: ${isMobile ? '2rem' : '5.5rem'};
+  font-size: ${isMobile ? '1.5rem' : '5.5rem'};
 `;
 
 export const SubtitleText = styled.p`
   margin: 0;
-  font-size: ${isMobile ? '0.8rem' : '2.5rem'};
+  font-size: ${isMobile ? '0.7rem' : '2.5rem'};
 `;
 
 export const SectionTitle = styled.h1`
@@ -55,8 +55,8 @@ export const HeadshotImage = styled.img`
   border-radius: 40%;
   margin-top: ${isMobile ? '1rem' : '0rem'};
   margin-left: ${isMobile ? '1rem' : '5rem'};
-  width: ${isMobile ? '90px' : '400px'};
-  height: ${isMobile ? '90px' : '400px'};
+  width: ${isMobile ? '28%' : '400px'};
+  height: ${isMobile ? '28%' : '400px'};
   border-style: solid;
   border-color: var(--orange);
   border-width: ${isMobile ? '0.2rem' : '0.5rem'};
@@ -76,7 +76,7 @@ export const DemoImage = styled.img`
 export const HeaderSection = styled.section`
   padding: 2rem;
   padding-bottom: ${isMobile ? '3rem' : '5rem'};
-  display: flex;
+  display: inline-flex;
   align-items: center;
   height: ${isMobile ? '10vh' : '80vh'};
 `;
