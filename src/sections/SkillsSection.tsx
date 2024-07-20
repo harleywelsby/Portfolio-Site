@@ -18,13 +18,11 @@ import {
 } from '../styles/styledComponents';
 import { CustomIcon } from '../components/CustomIcon';
 import {
-  CppIconpath,
   CsharpIconPath,
   DotNetIconPath,
   JavaScriptIconPath,
   NextIconPath,
   TypeScriptIconPath,
-  UnrealIconPath,
   ViteIconPath,
 } from '../constants';
 import { isMobile } from 'react-device-detect';
@@ -65,17 +63,12 @@ function SkillsSection() {
           <SkillStack>
             <SkillLogo
               icon={CustomIcon('dotnet', DotNetIconPath)}
-              label=".NET Core"
+              label="Dotnet"
               size={isMobile ? '3x' : '5x'}
             />
             <SkillLogo
               icon={CustomIcon('c#', CsharpIconPath)}
               label="C#"
-              size={isMobile ? '3x' : '5x'}
-            />
-            <SkillLogo
-              icon={CustomIcon('c++', CppIconpath)}
-              label="C++"
               size={isMobile ? '3x' : '5x'}
             />
             <SkillLogo icon={faJava} label="Java" size={isMobile ? '3x' : '5x'} />
@@ -89,11 +82,6 @@ function SkillsSection() {
             <SkillLogo icon={faJira} label="Jira" size={isMobile ? '3x' : '5x'} />
             <SkillLogo icon={faConfluence} label="Confluence" size={isMobile ? '3x' : '5x'} />
             <SkillLogo icon={faUnity} label="Unity" size={isMobile ? '3x' : '5x'} />
-            <SkillLogo
-              icon={CustomIcon('unreal', UnrealIconPath)}
-              label="Unreal Engine"
-              size={isMobile ? '3x' : '5x'}
-            />
           </SkillStack>
         </VerticalFlexBox>
       </HorizontalFlexBox>
