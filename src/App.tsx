@@ -4,6 +4,7 @@ import AboutSection from './sections/AboutSection';
 import SkillsSection from './sections/SkillsSection';
 import ResearchSection from './sections/ResearchSection';
 import FooterSection from './sections/FooterSection';
+import { Navbar } from './components/Navbar';
 
 function App() {
   const observer = useRef<IntersectionObserver | null>(null);
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <HomeSection />
       <AboutSection />
       <SkillsSection />
