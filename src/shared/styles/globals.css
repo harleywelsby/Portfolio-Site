@@ -4,6 +4,7 @@
   --orange: #ffaa4c;
   --black: #242424;
   --white: #fff7f1;
+  --grey: #3c3d37;
 
   font-family: 'Trebuchet MS', sans-serif;
   line-height: 1.5;
@@ -20,12 +21,13 @@
 
 #root {
   max-width: 100%;
+  height: 98vh;
   margin: 0 auto;
   text-align: center;
 }
 
 body {
-  margin: 0;
+  margin: 0; /* TODO: Set top margin to 2rem when Navbar enabled */
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -42,68 +44,10 @@ a {
   text-decoration: none;
 }
 
-/* Colours */
-
-.greyBackground {
-  background-color: var(--black);
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.altBackground {
-  background-color: var(--white);
-  color: var(--black);
-}
-
-.lightThemeText {
-  color: var(--black);
-}
-
-.darkThemeText {
-  color: var(--white);
-}
-
 /* Layout */
-
-.horizontal {
-  display: flex;
-  flex-direction: row;
-}
-
-.paddedBottom {
-  padding-bottom: 3rem;
-}
-
-.paddedTop {
-  padding-top: 3rem;
-}
-
-.padded {
-  padding: 2rem;
-}
-
-.verticalCenter {
-  display: flex;
-  align-items: center;
-}
-
-.linkLogoPadding {
-  padding: 0 2rem;
-}
 
 .linkLogoHover {
   color: var(--orange);
-}
-
-.smallMarginBottom {
-  margin-bottom: 1rem;
-}
-
-.skillLogo {
-  transition: transform 0.2s;
-}
-
-.skillLogoHover {
-  transform: scale(1.2);
 }
 
 /* Typewriter text effect - See below */
@@ -145,12 +89,12 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--black);
+  background: var(--grey);
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--orange);
-  border-radius: 10px;
+  border-radius: 0.2rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
