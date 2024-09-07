@@ -26,8 +26,8 @@ function App() {
     <>
       {/* <Navbar /> */}
       <HomeSection />
-      <ProjectsSection />
-      <ResearchSection />
+      {/* <ProjectsSection />
+      <ResearchSection /> */}
       <ContactSection />
       <FooterSection />
     </>

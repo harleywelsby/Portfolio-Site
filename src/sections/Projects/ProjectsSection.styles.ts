@@ -14,7 +14,8 @@ export const ProjectsSectionWrapper = styled.section`
   ${!isMobile && 'margin: 0 -16.9vw;'}
 `;
 
-export const ComingSoonText = styled.p`
+// TODO: Currently not in use
+export const ProjectsSectionText = styled.p`
   flex-wrap: wrap;
   text-align: center;
   padding: 0 10vw;

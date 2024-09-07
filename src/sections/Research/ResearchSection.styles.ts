@@ -11,6 +11,7 @@ export const ResearchSectionWrapper = styled.section`
   ${!isMobile && 'margin: 0 -16.9vw;'}
 `;
 
+// TODO: Currently not in use
 export const ResearchSectionText = styled.p`
   flex-wrap: wrap;
   text-align: left;

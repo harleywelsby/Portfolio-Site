@@ -1,5 +1,5 @@
 import { SectionTitle } from '../../shared/styles/styledComponents';
-import { ComingSoonText, ProjectsSectionWrapper } from './ProjectsSection.styles';
+import { ProjectsSectionWrapper } from './ProjectsSection.styles';
 
 function ProjectsSection() {
   // TODO: Unimplemented
@@ -7,7 +7,6 @@ function ProjectsSection() {
   return (
     <ProjectsSectionWrapper className="hidden">
       <SectionTitle $colour="black">Projects</SectionTitle>
-      <ComingSoonText>Section under construction 👷‍♂️🚧</ComingSoonText>
     </ProjectsSectionWrapper>
   );
 }
