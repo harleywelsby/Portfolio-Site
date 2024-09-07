@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import HomeSection from './sections/HomeSection';
 import AboutSection from './sections/AboutSection';
-import SkillsSection from './sections/SkillsSection';
 import ResearchSection from './sections/ResearchSection';
 import FooterSection from './sections/FooterSection';
 import { Navbar } from './components/Navbar';
@@ -25,14 +24,13 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <HomeSection />
-      <AboutSection />
-      <SkillsSection />
+      {/* <AboutSection /> */}
       {/* TODO: Add Portfolio from GitHub */}
       {/* <PortfolioSection /> */}
-      <ResearchSection />
-      <FooterSection />
+      {/* <ResearchSection />
+      <FooterSection /> */}
     </>
   );
 }

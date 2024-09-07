@@ -23,7 +23,7 @@ function HomeSection() {
 }
 
 const HomeWrapper = styled.section`
-  padding: 5rem 2rem ${isMobile ? '3rem' : '5rem'} 2rem;
+  padding: 2rem 0 ${isMobile ? '3rem' : '5rem'} 0;
   display: inline-flex;
   align-items: center;
   height: ${isMobile ? '10vh' : '80vh'};
@@ -31,7 +31,7 @@ const HomeWrapper = styled.section`
 
 const HomepageImage = styled.img`
   border-radius: 1rem;
-  width: 38rem;
+  width: ${isMobile ? '80vw' : '35vw'};
   margin: 1rem 0 1rem 0;
 `;
 
@@ -51,13 +51,13 @@ const TitleWrapper = styled.div`
 const NameText = styled.h1`
   color: var(--orange);
   margin-bottom: 0.3rem;
-  font-size: 5rem;
+  font-size: ${isMobile ? '10vw' : '5vw'};
   margin: 0;
 `;
 
 const SubtitleText = styled.p`
   margin: 0;
-  font-size: 2rem;
+  font-size: ${isMobile ? '5vw' : '2vw'};
 `;
 
 export default HomeSection;

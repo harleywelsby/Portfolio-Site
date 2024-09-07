@@ -5,6 +5,7 @@ import { CypressPath, DotNetIconPath, MySqlPath, TypeScriptIconPath } from '../c
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faAws, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
+import { isMobile } from 'react-device-detect';
 
 function TechStack() {
   return (
@@ -29,7 +30,7 @@ function TechStackItem({ icon, label }: TechStackItemProps) {
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
-      <FontAwesomeIcon icon={icon} size="3x" />
+      <FontAwesomeIcon icon={icon} size={isMobile ? '2x' : '3x'} />
       <TechStackItemLabel>{label}</TechStackItemLabel>
     </TechStackItemWrapper>
   );
@@ -43,7 +44,9 @@ type TechStackItemProps = {
 const TechStackWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: ${isMobile ? '1rem' : '2rem'};
+  margin-top: 1rem;
 `;
 
 const TechStackItemWrapper = styled.div<{ isHover: boolean }>`
@@ -53,6 +56,7 @@ const TechStackItemWrapper = styled.div<{ isHover: boolean }>`
 
 const TechStackItemLabel = styled.p`
   margin-top: 0.5rem;
+  ${isMobile && 'font-size: 2vw'};
 `;
 
 export default TechStack;
