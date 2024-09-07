@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import HomeSection from './sections/Home/HomeSection';
 import ResearchSection from './sections/ResearchSection';
-import FooterSection from './sections/FooterSection';
+import FooterSection from './sections/Footer/FooterSection';
 
 function App() {
   const observer = useRef<IntersectionObserver | null>(null);
@@ -27,7 +27,7 @@ function App() {
       {/* <AboutSection /> */}
       {/* TODO: Add Portfolio from GitHub */}
       {/* <PortfolioSection /> */}
-      <ResearchSection />
+      {/* <ResearchSection /> */}
       <FooterSection />
     </>
   );

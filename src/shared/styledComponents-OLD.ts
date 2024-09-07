@@ -1,3 +1,7 @@
+/**
+ * This file is being phased out in favour of individual *.styles.ts files for each section.
+ */
+
 import styled from 'styled-components';
 import { isMobile } from 'react-device-detect';
 

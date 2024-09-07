@@ -1,5 +1,5 @@
 import { isMobile } from 'react-device-detect';
-import { HorizontalFlexBox } from '../../shared/styledComponents';
+import { Flex } from '../../shared/styledComponents';
 import TechStack from '../../components/TechStack';
 import {
   HomeContentWrapper,
@@ -13,7 +13,7 @@ import {
 function HomeSection() {
   return (
     <HomeWrapper className="hidden">
-      <HorizontalFlexBox $gap="6rem">
+      <Flex $direction="row" $gap="6rem">
         <HomeContentWrapper>
           <TitleWrapper>
             <NameText className="hidden">Harley Welsby</NameText>
@@ -23,7 +23,7 @@ function HomeSection() {
           <TechStack />
         </HomeContentWrapper>
         {!isMobile && <HomepageImage className="hidden" src="homepageImage.jpg" loading="eager" />}
-      </HorizontalFlexBox>
+      </Flex>
     </HomeWrapper>
   );
 }
