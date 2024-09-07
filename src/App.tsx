@@ -1,9 +1,7 @@
 import { useEffect, useRef } from 'react';
-import HomeSection from './sections/HomeSection';
-import AboutSection from './sections/AboutSection';
+import HomeSection from './sections/Home/HomeSection';
 import ResearchSection from './sections/ResearchSection';
 import FooterSection from './sections/FooterSection';
-import { Navbar } from './components/Navbar';
 
 function App() {
   const observer = useRef<IntersectionObserver | null>(null);
@@ -24,12 +22,12 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <HomeSection />
       {/* <AboutSection /> */}
       {/* TODO: Add Portfolio from GitHub */}
       {/* <PortfolioSection /> */}
-      {/* <ResearchSection /> */}
+      <ResearchSection />
       <FooterSection />
     </>
   );

@@ -14,7 +14,7 @@ import {
   ParagraphText,
   Section,
   SectionTitle,
-} from '../styles/styledComponents';
+} from '../shared/styledComponents';
 
 function ResearchSection() {
   // TODO: Unimplemented

@@ -1,5 +1,5 @@
 import { GitHubPortfolioSiteUrl } from '../constants';
-import { ParagraphText, Section } from '../styles/styledComponents';
+import { ParagraphText, Section } from '../shared/styledComponents';
 
 function FooterSection() {
   // TODO: Unimplemented
