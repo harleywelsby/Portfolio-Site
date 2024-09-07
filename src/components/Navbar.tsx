@@ -1,10 +1,11 @@
+import { isMobile } from 'react-device-detect';
 import { styled } from 'styled-components';
 
 export const Navbar = () => {
   return (
     <NavbarWrapper className="hidden">
       <NavbarContent>
-        <Logo src="icon.png" width={40} height={40} />
+        {!isMobile && <Logo src="icon.png" width={40} height={40} />}
 
         <NavbarItemsWrapper>
           <NavbarItem>About</NavbarItem>

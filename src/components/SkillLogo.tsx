@@ -7,9 +7,10 @@ interface LinkLogoProps {
   icon: IconDefinition;
   label?: string;
   size: SizeProp;
+  $colour?: string;
 }
 
-function SkillLogo({ icon, label, size }: LinkLogoProps) {
+function SkillLogo({ icon, label, size, $colour }: LinkLogoProps) {
   const [isHover, setIsHover] = useState<boolean>(false);
 
   return (

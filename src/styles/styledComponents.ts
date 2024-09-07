@@ -93,9 +93,10 @@ export const Section = styled.section`
 
 /* Layouts */
 
-export const HorizontalFlexBox = styled.div`
+export const HorizontalFlexBox = styled.div<{ $gap?: string }>`
   display: flex;
   flex-direction: row;
+  gap: ${(props) => props.$gap ?? '0'};
 `;
 
 export const VerticalFlexBox = styled.div`
@@ -113,14 +114,14 @@ export const LinkLogoWrapper = styled.div`
   color: var(--black);
 `;
 
-export const SkillLogoWrapper = styled.div`
+export const SkillLogoWrapper = styled.div<{ $colour?: string }>`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: ${isMobile ? '1rem' : '1rem 2rem'};
-  color: var(--black);
-  ${!isMobile && 'margin: 0.5rem 0;'}
+  color: ${(props) => (props.$colour ? `var(--${props.$colour})` : 'var(--black)')};
+  ${!isMobile && 'margin: 0.5rem 0;'};
 `;
 
 export const SkillStack = styled.div`
