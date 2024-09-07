@@ -8,8 +8,7 @@ export const Navbar = () => {
         {!isMobile && <Logo src="icon.png" width={40} height={40} />}
 
         <NavbarItemsWrapper>
-          <NavbarItem>About</NavbarItem>
-          <NavbarItem>Projects</NavbarItem>
+          {/* <NavbarItem>Projects</NavbarItem> */}
           <NavbarItem>Research</NavbarItem>
           <NavbarItem>Contact</NavbarItem>
         </NavbarItemsWrapper>

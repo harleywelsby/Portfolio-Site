@@ -23,10 +23,10 @@ function HomeSection() {
 }
 
 const HomeWrapper = styled.section`
-  padding: 2rem 0 ${isMobile ? '3rem' : '5rem'} 0;
+  padding: ${isMobile ? '2rem' : '4rem'} 0 ${isMobile ? '3rem' : '5rem'} 0;
   display: inline-flex;
   align-items: center;
-  height: ${isMobile ? '10vh' : '80vh'};
+  height: ${!isMobile && '80vh'};
 `;
 
 const HomepageImage = styled.img`
@@ -40,7 +40,7 @@ const HomeContentWrapper = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 4rem 0 4rem 0;
+  ${!isMobile && 'padding: 4rem 0 4rem 0;'}
 `;
 
 const TitleWrapper = styled.div`
