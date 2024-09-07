@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <HomeSection />
       {/* <AboutSection /> */}
       {/* TODO: Add Portfolio from GitHub */}

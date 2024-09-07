@@ -26,7 +26,7 @@ function TechStackItem({ icon, label }: TechStackItemProps) {
 
   return (
     <TechStackItemWrapper
-      isHover={isHover}
+      $isHover={isHover}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
@@ -49,9 +49,9 @@ const TechStackWrapper = styled.div`
   margin-top: 1rem;
 `;
 
-const TechStackItemWrapper = styled.div<{ isHover: boolean }>`
+const TechStackItemWrapper = styled.div<{ $isHover: boolean }>`
   margin: 0;
-  ${(props) => props.isHover && 'transform: scale(1.2)'};
+  ${(props) => props.$isHover && 'transform: scale(1.2)'};
 `;
 
 const TechStackItemLabel = styled.p`

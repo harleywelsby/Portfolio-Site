@@ -51,13 +51,13 @@ const TitleWrapper = styled.div`
 const NameText = styled.h1`
   color: var(--orange);
   margin-bottom: 0.3rem;
-  font-size: ${isMobile ? '10vw' : '5vw'};
+  font-size: ${isMobile ? '10vw' : '5rem'};
   margin: 0;
 `;
 
 const SubtitleText = styled.p`
   margin: 0;
-  font-size: ${isMobile ? '5vw' : '2vw'};
+  font-size: ${isMobile ? '5vw' : '2rem'};
 `;
 
 export default HomeSection;

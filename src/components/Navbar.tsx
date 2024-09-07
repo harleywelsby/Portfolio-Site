@@ -26,29 +26,30 @@ const NavbarWrapper = styled.div`
 `;
 
 const NavbarContent = styled.div`
-  display: flex;
-  flex-direction: row;
-
+  ${!isMobile && 'display: flex;'}
   justify-content: space-between;
-  position: flex;
+  position: fixed;
 
   top: 0;
-  width: 90%;
+  width: ${isMobile ? '80%' : '70%'};
 
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 1rem 0 1rem 0;
 `;
 
-const NavbarItemsWrapper = styled.div`
+const NavbarItemsWrapper = styled.ul`
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: ${isMobile ? 'center' : 'right'};
   gap: 2rem;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 `;
 
-const NavbarItem = styled.div`
-  padding: 1rem;
-  font-size: 1.5rem;
+const NavbarItem = styled.li`
+  padding: 1vw;
+  font-size: ${isMobile ? '4vw' : '1.5rem'};
 `;
 
 const Logo = styled.img`
