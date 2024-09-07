@@ -2,4 +2,4 @@
 
 My website, built with React and Vite and hosted serverlessly on Vercel.
 
-![Demo](src/assets/ReadmeDemo.jpg 'WebsiteDemo')
+![Demo](demos/ReadmeDemo.jpg 'WebsiteDemo')
