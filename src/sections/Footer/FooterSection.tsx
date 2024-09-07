@@ -1,4 +1,4 @@
-import { GitHubPortfolioSiteUrl } from '../../constants';
+import { GitHubPortfolioSiteUrl } from '../../shared/utils/Constants';
 import { FooterWrapper, FooterText } from './FooterSection.styles';
 
 function FooterSection() {

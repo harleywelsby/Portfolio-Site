@@ -1,6 +1,6 @@
 import { isMobile } from 'react-device-detect';
-import { Flex } from '../../shared/styledComponents';
-import TechStack from '../../components/TechStack';
+import { Flex } from '../../shared/styles/styledComponents';
+import TechStack from '../../components/TechStack/TechStack';
 import {
   HomeContentWrapper,
   HomepageImage,

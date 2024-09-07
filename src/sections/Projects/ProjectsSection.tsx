@@ -1,12 +1,14 @@
-import { Section, SectionTitle } from '../../shared/styledComponents-OLD';
+import { SectionTitle } from '../../shared/styles/styledComponents';
+import { ComingSoonText, ProjectsSectionWrapper } from './ProjectsSection.styles';
 
 function ProjectsSection() {
   // TODO: Unimplemented
 
   return (
-    <Section className="hidden altBackground">
+    <ProjectsSectionWrapper className="hidden altBackground">
       <SectionTitle className="lightThemeText">Projects</SectionTitle>
-    </Section>
+      <ComingSoonText>Section under construction 👷‍♂️🚧</ComingSoonText>
+    </ProjectsSectionWrapper>
   );
 }
 

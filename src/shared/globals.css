@@ -4,6 +4,7 @@
   --orange: #ffaa4c;
   --black: #242424;
   --white: #fff7f1;
+  --grey: #3c3d37;
 
   font-family: 'Trebuchet MS', sans-serif;
   line-height: 1.5;
@@ -146,7 +147,7 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--black);
+  background: var(--grey);
 }
 
 ::-webkit-scrollbar-thumb {

@@ -1,7 +1,7 @@
 import { isMobile } from 'react-device-detect';
-import { css, styled } from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const ContactSectionWrapper = styled.section`
+export const ProjectsSectionWrapper = styled.section`
   padding: ${isMobile ? '1rem' : '3rem 1rem'};
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@ export const ContactSectionWrapper = styled.section`
   ${!isMobile && 'margin: 0 -16.9vw;'}
 `;
 
-export const ContactSectionText = styled.p`
+export const ComingSoonText = styled.p`
   flex-wrap: wrap;
   text-align: center;
   padding: 0 10vw;

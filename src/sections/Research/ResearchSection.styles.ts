@@ -1,7 +1,7 @@
 import { isMobile } from 'react-device-detect';
 import { css, styled } from 'styled-components';
 
-export const ContactSectionWrapper = styled.section`
+export const ResearchSectionWrapper = styled.section`
   padding: ${isMobile ? '1rem' : '3rem 1rem'};
   display: flex;
   flex-direction: column;
@@ -11,14 +11,14 @@ export const ContactSectionWrapper = styled.section`
   ${!isMobile && 'margin: 0 -16.9vw;'}
 `;
 
-export const ContactSectionText = styled.p`
+export const ResearchSectionText = styled.p`
   flex-wrap: wrap;
-  text-align: center;
+  text-align: left;
   padding: 0 10vw;
 
   ${!isMobile &&
   css`
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: 40%;
   `}
 `;

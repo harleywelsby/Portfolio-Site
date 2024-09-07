@@ -1,28 +1,14 @@
-import {
-  ProjectDemoImageReference,
-  ProjectReadMoreText,
-  RESEARCH_PARAGRAPH_1,
-  RESEARCH_PARAGRAPH_2,
-  RESEARCH_PARAGRAPH_3,
-  RESEARCH_PARAGRAPH_4,
-  RESEARCH_PARAGRAPH_5,
-  VuwResearchPaperUrl,
-} from '../../constants';
-import {
-  DemoImage,
-  ImageReference,
-  ParagraphText,
-  Section,
-  SectionTitle,
-} from '../../shared/styledComponents-OLD';
+import { SectionTitle } from '../../shared/styles/styledComponents';
+import { ResearchSectionText, ResearchSectionWrapper } from './ResearchSection.styles';
 
 function ResearchSection() {
   // TODO: Unimplemented
 
   return (
-    <Section className="hidden">
+    <ResearchSectionWrapper className="hidden">
       <SectionTitle>Research</SectionTitle>
-      <ParagraphText className="hidden">{RESEARCH_PARAGRAPH_1}</ParagraphText>
+      <ResearchSectionText></ResearchSectionText>
+      {/* <ParagraphText className="hidden">{RESEARCH_PARAGRAPH_1}</ParagraphText>
       <br />
       <ParagraphText className="hidden">{RESEARCH_PARAGRAPH_2}</ParagraphText>
       <br />
@@ -40,8 +26,8 @@ function ResearchSection() {
         <a href={VuwResearchPaperUrl} target="_blank" rel="noreferrer">
           here.
         </a>
-      </ParagraphText>
-    </Section>
+      </ParagraphText> */}
+    </ResearchSectionWrapper>
   );
 }
 
