@@ -7,6 +7,9 @@ export const ProjectsSectionWrapper = styled.section`
   flex-direction: column;
   align-items: center;
 
+  background-color: var(--white);
+  color: var(--black);
+
   // This is bad and hacky, but without it the sections don't fill the screen responsively.
   ${!isMobile && 'margin: 0 -16.9vw;'}
 `;

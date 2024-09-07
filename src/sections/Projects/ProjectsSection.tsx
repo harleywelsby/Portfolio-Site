@@ -5,8 +5,8 @@ function ProjectsSection() {
   // TODO: Unimplemented
 
   return (
-    <ProjectsSectionWrapper className="hidden altBackground">
-      <SectionTitle className="lightThemeText">Projects</SectionTitle>
+    <ProjectsSectionWrapper className="hidden">
+      <SectionTitle $colour="black">Projects</SectionTitle>
       <ComingSoonText>Section under construction 👷‍♂️🚧</ComingSoonText>
     </ProjectsSectionWrapper>
   );

@@ -7,9 +7,9 @@ import { Flex, SectionTitle } from '../../shared/styles/styledComponents';
 
 function ContactSection() {
   return (
-    <ContactSectionWrapper className="hidden altBackground">
-      <SectionTitle className="lightThemeText">Contact</SectionTitle>
-      <ContactSectionText className="lightThemeText">
+    <ContactSectionWrapper className="hidden">
+      <SectionTitle $colour="black">Contact</SectionTitle>
+      <ContactSectionText>
         I'm always looking to meet people and love to engage with the Tech community, so feel free
         to reach out at the links below!
       </ContactSectionText>

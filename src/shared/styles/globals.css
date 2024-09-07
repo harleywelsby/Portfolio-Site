@@ -44,68 +44,10 @@ a {
   text-decoration: none;
 }
 
-/* Colours */
-
-.greyBackground {
-  background-color: var(--black);
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.altBackground {
-  background-color: var(--white);
-  color: var(--black);
-}
-
-.lightThemeText {
-  color: var(--black);
-}
-
-.darkThemeText {
-  color: var(--white);
-}
-
 /* Layout */
-
-.horizontal {
-  display: flex;
-  flex-direction: row;
-}
-
-.paddedBottom {
-  padding-bottom: 3rem;
-}
-
-.paddedTop {
-  padding-top: 3rem;
-}
-
-.padded {
-  padding: 2rem;
-}
-
-.verticalCenter {
-  display: flex;
-  align-items: center;
-}
-
-.linkLogoPadding {
-  padding: 0 2rem;
-}
 
 .linkLogoHover {
   color: var(--orange);
-}
-
-.smallMarginBottom {
-  margin-bottom: 1rem;
-}
-
-.skillLogo {
-  transition: transform 0.2s;
-}
-
-.skillLogoHover {
-  transform: scale(1.2);
 }
 
 /* Typewriter text effect - See below */
@@ -152,7 +94,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background: var(--orange);
-  border-radius: 10px;
+  border-radius: 0.2rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {

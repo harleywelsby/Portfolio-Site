@@ -6,7 +6,7 @@ function ResearchSection() {
 
   return (
     <ResearchSectionWrapper className="hidden">
-      <SectionTitle>Research</SectionTitle>
+      <SectionTitle $colour="white">Research</SectionTitle>
       <ResearchSectionText></ResearchSectionText>
       {/* <ParagraphText className="hidden">{RESEARCH_PARAGRAPH_1}</ParagraphText>
       <br />
