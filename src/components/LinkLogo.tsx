@@ -1,6 +1,6 @@
 import { IconDefinition, SizeProp } from '@fortawesome/fontawesome-svg-core';
 import { useState } from 'react';
-import { LinkLogoLabel, LinkLogoWrapper } from '../shared/styledComponents';
+import { LinkLogoLabel, LinkLogoWrapper } from '../shared/styledComponents-OLD';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface LinkLogoProps {

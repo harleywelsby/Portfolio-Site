@@ -1,4 +1,4 @@
-import { Section, SectionTitle } from '../shared/styledComponents';
+import { Section, SectionTitle } from '../shared/styledComponents-OLD';
 
 function PortfolioSection() {
   // TODO: Unimplemented

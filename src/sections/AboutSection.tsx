@@ -6,7 +6,7 @@ import {
   ParagraphText,
   Section,
   SectionTitle,
-} from '../shared/styledComponents';
+} from '../shared/styledComponents-OLD';
 import {
   ABOUT_ME_PARAGRAPH_1,
   ABOUT_ME_PARAGRAPH_2,
