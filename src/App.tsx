@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
 import HomeSection from './sections/Home/HomeSection';
-import ResearchSection from './sections/Research/ResearchSection';
+// import ResearchSection from './sections/Research/ResearchSection';
 import FooterSection from './sections/Footer/FooterSection';
-import ProjectsSection from './sections/Projects/ProjectsSection';
+// import ProjectsSection from './sections/Projects/ProjectsSection';
 import ContactSection from './sections/Contact/ContactSection';
 
 function App() {
