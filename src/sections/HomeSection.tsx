@@ -22,8 +22,7 @@ function HomeSection() {
 }
 
 const HomeWrapper = styled.section`
-  padding: 2rem;
-  padding-bottom: ${isMobile ? '3rem' : '5rem'};
+  padding: 5rem 2rem ${isMobile ? '3rem' : '5rem'} 2rem;
   display: inline-flex;
   align-items: center;
   height: ${isMobile ? '10vh' : '80vh'};
