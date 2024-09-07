@@ -7,21 +7,21 @@ import {
   RESEARCH_PARAGRAPH_4,
   RESEARCH_PARAGRAPH_5,
   VuwResearchPaperUrl,
-} from '../constants';
+} from '../../constants';
 import {
   DemoImage,
   ImageReference,
   ParagraphText,
   Section,
   SectionTitle,
-} from '../shared/styledComponents-OLD';
+} from '../../shared/styledComponents-OLD';
 
 function ResearchSection() {
   // TODO: Unimplemented
 
   return (
-    <Section className="hidden altBackground">
-      <SectionTitle className="lightThemeText">Research</SectionTitle>
+    <Section className="hidden">
+      <SectionTitle>Research</SectionTitle>
       <ParagraphText className="hidden">{RESEARCH_PARAGRAPH_1}</ParagraphText>
       <br />
       <ParagraphText className="hidden">{RESEARCH_PARAGRAPH_2}</ParagraphText>
