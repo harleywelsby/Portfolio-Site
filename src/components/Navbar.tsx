@@ -29,7 +29,7 @@ const NavbarContent = styled.div`
   display: flex;
   flex-direction: row;
 
-  justify-content: space-between;
+  ${!isMobile && 'justify-content: space-between;'}
 
   position: fixed;
   top: 0;
@@ -48,7 +48,7 @@ const NavbarItemsWrapper = styled.div`
 
 const NavbarItem = styled.div`
   padding: 1rem;
-  font-size: 18pt;
+  font-size: ${isMobile ? '8pt' : '18pt'};
 `;
 
 const Logo = styled.img`

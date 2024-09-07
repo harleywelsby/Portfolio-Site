@@ -13,9 +13,10 @@ function HomeSection() {
             <NameText className="hidden">Harley Welsby</NameText>
             <SubtitleText className="hidden typewriter">Full-Stack Software Developer</SubtitleText>
           </TitleWrapper>
+          {isMobile && <HomepageImage className="hidden" src="homepageImage.jpg" loading="eager" />}
           <TechStack />
         </HomeContentWrapper>
-        <HomepageImage className="hidden" src="homepageImage.jpg" loading="eager" />
+        {!isMobile && <HomepageImage className="hidden" src="homepageImage.jpg" loading="eager" />}
       </HorizontalFlexBox>
     </HomeWrapper>
   );
@@ -31,6 +32,7 @@ const HomeWrapper = styled.section`
 const HomepageImage = styled.img`
   border-radius: 1rem;
   width: 38rem;
+  margin: 1rem 0 1rem 0;
 `;
 
 const HomeContentWrapper = styled.div`
@@ -49,13 +51,13 @@ const TitleWrapper = styled.div`
 const NameText = styled.h1`
   color: var(--orange);
   margin-bottom: 0.3rem;
-  font-size: ${isMobile ? '1.5rem' : '5rem'};
+  font-size: 5rem;
   margin: 0;
 `;
 
 const SubtitleText = styled.p`
   margin: 0;
-  font-size: ${isMobile ? '0.7rem' : '2rem'};
+  font-size: 2rem;
 `;
 
 export default HomeSection;

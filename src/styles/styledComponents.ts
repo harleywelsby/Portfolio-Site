@@ -34,11 +34,6 @@ export const LinkLogoLabel = styled.p`
   font-size: 1.5rem;
 `;
 
-export const SkillLogoLabel = styled.p`
-  margin: 0.2rem;
-  font-size: ${isMobile ? '0.7rem' : '1.5rem'};
-`;
-
 export const ImageReference = styled.p`
   font-size: ${isMobile ? '0.7rem' : '1rem'};
   max-width: ${isMobile ? '80%' : '50%'};
@@ -112,29 +107,4 @@ export const LinkLogoWrapper = styled.div`
   align-items: center;
   padding: ${isMobile ? '1rem' : '1rem 2rem'};
   color: var(--black);
-`;
-
-export const SkillLogoWrapper = styled.div<{ $colour?: string }>`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: ${isMobile ? '1rem' : '1rem 2rem'};
-  color: ${(props) => (props.$colour ? `var(--${props.$colour})` : 'var(--black)')};
-  ${!isMobile && 'margin: 0.5rem 0;'};
-`;
-
-export const SkillStack = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--orange);
-  border-top-right-radius: 15% 5%;
-  border-top-left-radius: 15% 5%;
-  border-bottom-right-radius: 15% 5%;
-  border-bottom-left-radius: 15% 5%;
-  padding: 1rem;
-  margin: ${isMobile ? '0.5rem 0' : '1rem 3rem'};
-  width: ${isMobile ? '4rem' : '15rem'};
 `;
