@@ -7,7 +7,7 @@ export const HomeWrapper = styled.section`
   padding: 1rem 0 3rem 0;
 
   @media (min-width: 35em) {
-    padding: 4rem 0 5rem 0;
+    padding: 4rem 0 3rem 0;
     height: 80vh;
   }
 `;

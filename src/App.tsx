@@ -4,6 +4,7 @@ import HomeSection from './sections/Home/HomeSection';
 import FooterSection from './sections/Footer/FooterSection';
 // import ProjectsSection from './sections/Projects/ProjectsSection';
 import ContactSection from './sections/Contact/ContactSection';
+import { SectionDivider } from './shared/styles/styledComponents';
 
 function App() {
   const observer = useRef<IntersectionObserver | null>(null);
@@ -26,6 +27,7 @@ function App() {
     <>
       {/* <Navbar /> */}
       <HomeSection />
+      <SectionDivider />
       {/* <ProjectsSection />
       <ResearchSection /> */}
       <ContactSection />

@@ -4,10 +4,6 @@ export const ContactSectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background-color: var(--white);
-  color: var(--black);
-
   padding: 1rem;
 
   @media (min-width: 35em) {
@@ -19,7 +15,6 @@ export const ContactSectionText = styled.p`
   flex-wrap: wrap;
   text-align: center;
   padding: 0 10vw;
-  color: var(--black);
 
   @media (min-width: 35em) {
     font-size: 1.5rem;

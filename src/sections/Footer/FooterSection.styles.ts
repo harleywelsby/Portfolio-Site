@@ -6,9 +6,12 @@ export const FooterWrapper = styled.section`
   align-items: center;
 
   padding: 1rem;
+  margin-top: 2rem;
+
+  background-color: var(--deep-black);
 
   @media (min-width: 35em) {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
   }
 `;
 

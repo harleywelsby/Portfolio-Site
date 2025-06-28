@@ -10,7 +10,7 @@ function ContactSection() {
 
   return (
     <ContactSectionWrapper className="hidden">
-      <SectionTitle $colour="black">Contact</SectionTitle>
+      <SectionTitle>Contact</SectionTitle>
       <ContactSectionText>
         I'm always looking to meet people and love to engage with the Tech community, so feel free
         to reach out at the links below!

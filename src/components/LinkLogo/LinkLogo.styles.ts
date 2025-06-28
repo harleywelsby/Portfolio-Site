@@ -5,7 +5,8 @@ export const LinkLogoWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--black);
+
+  color: var(--white);
 
   padding: 1rem;
 

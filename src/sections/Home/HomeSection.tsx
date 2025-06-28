@@ -8,7 +8,6 @@ import {
   SubtitleText,
   TitleWrapper,
 } from './HomeSection.styles';
-import { useMediaQuery } from 'react-responsive';
 
 function HomeSection() {
   return (
