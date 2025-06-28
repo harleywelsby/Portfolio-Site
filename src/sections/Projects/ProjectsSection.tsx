@@ -6,7 +6,7 @@ function ProjectsSection() {
 
   return (
     <ProjectsSectionWrapper className="hidden">
-      <SectionTitle $colour="black">Projects</SectionTitle>
+      <SectionTitle>Projects</SectionTitle>
     </ProjectsSectionWrapper>
   );
 }
