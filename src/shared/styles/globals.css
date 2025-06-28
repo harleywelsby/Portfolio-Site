@@ -26,15 +26,6 @@
   text-align: center;
 }
 
-body {
-  margin: 0; /* TODO: Set top margin to 2rem when Navbar enabled */
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -73,10 +64,11 @@ a {
 
 /* Fade in/out  effect */
 
-.hidden {
+/* TODO: Disabled during dev */
+/* .hidden {
   opacity: 0;
   transition: all 1s;
-}
+} */
 
 .show {
   opacity: 1;

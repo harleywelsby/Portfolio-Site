@@ -1,21 +1,28 @@
-import { isMobile } from 'react-device-detect';
 import { styled } from 'styled-components';
 
 export const FooterWrapper = styled.section`
-  padding: ${isMobile ? '1rem' : '3rem 1rem'};
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  // This is bad and hacky, but without it the sections don't fill the screen responsively.
-  /* ${!isMobile && 'margin: 0 -16.9vw;'} */
+  padding: 1rem;
+
+  @media (min-width: 35em) {
+    padding: 3rem 1rem;
+  }
 `;
 
 export const FooterText = styled.p`
-  font-size: ${isMobile ? '1rem' : '1.5rem'};
-  max-width: ${isMobile ? '80%' : '50%'};
   font-weight: 4;
   margin: 0;
   padding: 0;
   text-align: left;
+
+  font-size: 1rem;
+  max-width: 80%;
+
+  @media (min-width: 35em) {
+    font-size: 1.5rem;
+    max-width: 50%;
+  }
 `;

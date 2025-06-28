@@ -1,4 +1,3 @@
-import { isMobile } from 'react-device-detect';
 import { Flex } from '../../shared/styles/styledComponents';
 import TechStack from '../../components/TechStack/TechStack';
 import {
@@ -9,20 +8,20 @@ import {
   SubtitleText,
   TitleWrapper,
 } from './HomeSection.styles';
+import { useMediaQuery } from 'react-responsive';
 
 function HomeSection() {
   return (
     <HomeWrapper className="hidden">
-      <Flex $direction="row" $gap="6rem">
+      <Flex $direction="column" $gap="1rem">
         <HomeContentWrapper>
           <TitleWrapper>
             <NameText className="hidden">Harley Welsby</NameText>
-            <SubtitleText className="hidden typewriter">Full-Stack Software Developer</SubtitleText>
+            <SubtitleText className="hidden typewriter">{`{ Full-Stack Developer }`}</SubtitleText>
           </TitleWrapper>
-          {isMobile && <HomepageImage className="hidden" src="homepageImage.jpg" loading="eager" />}
+          <HomepageImage className="hidden" src="homepageImage.jpg" loading="eager" />
           <TechStack />
         </HomeContentWrapper>
-        {!isMobile && <HomepageImage className="hidden" src="homepageImage.jpg" loading="eager" />}
       </Flex>
     </HomeWrapper>
   );

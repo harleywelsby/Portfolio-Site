@@ -1,8 +1,6 @@
-import { isMobile } from 'react-device-detect';
-import { css, styled } from 'styled-components';
+import { styled } from 'styled-components';
 
 export const ContactSectionWrapper = styled.section`
-  padding: ${isMobile ? '1rem' : '3rem 1rem'};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,8 +8,11 @@ export const ContactSectionWrapper = styled.section`
   background-color: var(--white);
   color: var(--black);
 
-  // This is bad and hacky, but without it the sections don't fill the screen responsively.
-  ${!isMobile && 'margin: 0 -16.9vw;'}
+  padding: 1rem;
+
+  @media (min-width: 35em) {
+    padding: 3rem 1rem;
+  }
 `;
 
 export const ContactSectionText = styled.p`
@@ -20,9 +21,8 @@ export const ContactSectionText = styled.p`
   padding: 0 10vw;
   color: var(--black);
 
-  ${!isMobile &&
-  css`
+  @media (min-width: 35em) {
     font-size: 1.5rem;
     width: 40%;
-  `};
+  }
 `;

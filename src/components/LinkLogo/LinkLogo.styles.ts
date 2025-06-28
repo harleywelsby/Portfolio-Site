@@ -1,4 +1,3 @@
-import { isMobile } from 'react-device-detect';
 import styled from 'styled-components';
 
 export const LinkLogoWrapper = styled.div`
@@ -6,8 +5,13 @@ export const LinkLogoWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: ${isMobile ? '1rem' : '1rem 2rem'};
   color: var(--black);
+
+  padding: 1rem;
+
+  @media (min-width: 35em) {
+    padding: 1rem 2rem;
+  }
 `;
 
 export const LinkLogoLabel = styled.p`

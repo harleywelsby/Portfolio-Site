@@ -1,12 +1,20 @@
-import { isMobile } from 'react-device-detect';
 import styled from 'styled-components';
 
 export const TechStackWrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: ${isMobile ? '1rem' : '2rem'};
   margin-top: 1rem;
+
+  padding: 0 3rem;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+
+  @media (min-width: 35em) {
+    gap: 2rem;
+  }
 `;
 
 export const TechStackItemWrapper = styled.div<{ $isHover: boolean }>`
@@ -16,5 +24,5 @@ export const TechStackItemWrapper = styled.div<{ $isHover: boolean }>`
 
 export const TechStackItemLabel = styled.p`
   margin-top: 0.5rem;
-  ${isMobile && 'font-size: 2vw'};
+  font-size: clamp(0.8rem, 3vw + 0.25rem, 1.2rem);
 `;

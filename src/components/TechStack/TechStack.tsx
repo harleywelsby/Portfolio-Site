@@ -12,10 +12,11 @@ import TechStackItem from './TechStackItem';
 function TechStack() {
   return (
     <TechStackWrapper className="hidden">
+      <TechStackItem icon={CustomIcon('dotnet', DotNetIconPath)} label="Dotnet" />
       <TechStackItem icon={faReact} label="React" />
       <TechStackItem icon={CustomIcon('ts', TypeScriptIconPath)} label="TypeScript" />
       <TechStackItem icon={faNodeJs} label="Node.js" />
-      <TechStackItem icon={CustomIcon('dotnet', DotNetIconPath)} label="Dotnet" />
+
       <TechStackItem icon={faAws} label="AWS" />
       <TechStackItem icon={CustomIcon('cypress', CypressPath)} label="Cypress" />
       <TechStackItem icon={CustomIcon('mysql', MySqlPath)} label="MySQL" />

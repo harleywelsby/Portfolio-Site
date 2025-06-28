@@ -2,10 +2,12 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import LinkLogo from '../../components/LinkLogo/LinkLogo';
 import { ContactSectionText, ContactSectionWrapper } from './ContactSection.styles';
 import { GithubUrl, LinkedinUrl } from '../../shared/utils/Constants';
-import { isMobile } from 'react-device-detect';
 import { Flex, SectionTitle } from '../../shared/styles/styledComponents';
+import { useMediaQuery } from 'react-responsive';
 
 function ContactSection() {
+  const isMobile = useMediaQuery({ query: 'max-width: 35em' });
+
   return (
     <ContactSectionWrapper className="hidden">
       <SectionTitle $colour="black">Contact</SectionTitle>
