@@ -89,8 +89,6 @@ const SectionWrapper = styled.div`
 
   max-width: 1000px;
   margin: 2rem auto;
-
-  background-color: var(--soft-white);
 `;
 
 const Title = styled.h1`

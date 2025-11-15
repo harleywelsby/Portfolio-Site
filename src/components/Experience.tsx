@@ -12,6 +12,20 @@ import {
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
 
+interface SkillTagProps {
+  skill: string;
+  color?: string;
+  textColor?: string;
+}
+
+function SkillTag({ skill, color, textColor }: SkillTagProps) {
+  return (
+    <SkillTagWrapper $color={color} $textColor={textColor}>
+      {skill}
+    </SkillTagWrapper>
+  );
+}
+
 interface ExperienceItemProps {
   type: "work" | "education";
   title: string;
@@ -20,6 +34,7 @@ interface ExperienceItemProps {
   endDate: string;
   description?: string;
   logo?: string;
+  skills?: SkillTagProps[];
 }
 
 function ExperienceItem({
@@ -28,6 +43,7 @@ function ExperienceItem({
   institution,
   startDate,
   endDate,
+  skills,
 }: ExperienceItemProps) {
   return (
     <TimelineItem>
@@ -47,6 +63,13 @@ function ExperienceItem({
         <Dates>
           {startDate} — {endDate}
         </Dates>
+        {skills && (
+          <Skills>
+            {skills.map((skill, index) => (
+              <SkillTag key={index} skill={skill.skill} color={skill.color} />
+            ))}
+          </Skills>
+        )}
       </ExperienceDetailsWrapper>
     </TimelineItem>
   );
@@ -74,6 +97,22 @@ function Experience() {
           institution="PartsTrader"
           startDate="November 2021"
           endDate="June 2025"
+          // TODO:
+          // skills={[
+          //   { skill: "React.js", color: "var(--react-blue)" },
+          //   { skill: "TypeScript", color: "var(--typescript-blue)" },
+          //   { skill: ".NET", color: "var(--dotnet-purple)" },
+          //   {
+          //     skill: "SQL Server",
+          //     color: "var(--sql-server-yellow)",
+          //     textColor: "var(--soft-black)",
+          //   },
+          //   {
+          //     skill: "AWS",
+          //     color: "var(--aws-orange)",
+          //     textColor: "var(--soft-black)",
+          //   },
+          // ]}
         />
         <ExperienceItem
           type="education"
@@ -136,6 +175,28 @@ const ExperienceDetailsWrapper = styled.div`
   width: 100%;
   padding: 1rem 0.5rem;
   margin: 1rem 0;
+`;
+
+const Skills = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: 0.5rem 1rem;
+`;
+
+const SkillTagWrapper = styled.span<{ $color?: string; $textColor?: string }>`
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+
+  background-color: ${(props) => props.$color || "var(--soft-black)"};
+  color: ${(props) => props.$textColor || "var(--soft-white)"};
 `;
 
 export default Experience;
