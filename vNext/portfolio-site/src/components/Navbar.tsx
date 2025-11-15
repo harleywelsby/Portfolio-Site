@@ -12,10 +12,10 @@ function Navbar() {
           <NavbarItem href={'/'}>About</NavbarItem>
         </li>
         <li>
-          <NavbarItem href={'/'}>Research</NavbarItem>
+          <NavbarItem href={'/'}>Experience</NavbarItem>
         </li>
         <li>
-          <NavbarItem href={'/'}>Contact</NavbarItem>
+          <NavbarItem href={'/'}>Research</NavbarItem>
         </li>
       </NavbarList>
     </NavbarWrapper>
@@ -31,8 +31,7 @@ const NavbarWrapper = styled.nav`
   z-index: ${zIndex.AlwaysAtFront};
   background-color: var(--deep-black);
 
-  min-width: 105%;
-  margin: -0.5rem 0 0 0;
+  min-width: 100%;
   padding-bottom: 1.5rem;
 
   @media (min-width: 35em) {
