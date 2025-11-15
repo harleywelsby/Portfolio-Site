@@ -1,0 +1,89 @@
+import styled from 'styled-components';
+import { zIndex } from '../shared/styles/styleConstants';
+
+function Navbar() {
+  return (
+    <NavbarWrapper>
+      <TitleWrapper>
+        <Title>Harley Welsby</Title>
+      </TitleWrapper>
+      <NavbarList className="navbar-list">
+        <li>
+          <NavbarItem href={'/'}>About</NavbarItem>
+        </li>
+        <li>
+          <NavbarItem href={'/'}>Research</NavbarItem>
+        </li>
+        <li>
+          <NavbarItem href={'/'}>Contact</NavbarItem>
+        </li>
+      </NavbarList>
+    </NavbarWrapper>
+  );
+}
+
+const NavbarWrapper = styled.nav`
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+
+  z-index: ${zIndex.AlwaysAtFront};
+  background-color: var(--deep-black);
+
+  min-width: 105%;
+  margin: -0.5rem 0 0 0;
+  padding-bottom: 1.5rem;
+
+  @media (min-width: 35em) {
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+  }
+`;
+
+const TitleWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%;
+  padding-bottom: 0.5rem;
+`;
+
+const Title = styled.h1`
+  color: var(--title-orange);
+  font-size: clamp(2rem, 3vw + 0.25rem, 4rem);
+
+  padding: 1rem 0rem 0.5rem 0.2rem;
+  margin: 0;
+
+  @media (min-width: 35em) {
+    padding: 0 1rem 1rem 1rem;
+  }
+`;
+
+const NavbarList = styled.ul`
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+`;
+
+const NavbarItem = styled.a`
+  color: var(--soft-white);
+  text-decoration: none;
+  padding: 0.3rem;
+
+  font-weight: 500;
+  font-size: clamp(1rem, 2vw + 0.7rem, 1.5rem);
+
+  &:hover {
+    color: var(--title-orange);
+  }
+`;
+
+export default Navbar;
