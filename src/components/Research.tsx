@@ -47,10 +47,10 @@ function Research() {
       <SectionWrapper>
         <Title id="Research">Research</Title>
         <IntroParagraph>
-          As part of my Bachelor of Engineering at Victoria University, I
-          conducted a year-long research project studying the effects of VR
-          motion simulators on physical sickness, in partnership with the VR
-          startup Eight360.
+          As part of my Bachelor of Engineering with Honours at Victoria
+          University, I conducted a year-long research project studying the
+          effects of VR motion simulators on physical sickness, in partnership
+          with the VR startup Eight360.
           <br />
           <br />
           The study involved the development of a spaceship flight simulator
