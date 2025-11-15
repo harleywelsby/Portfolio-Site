@@ -34,8 +34,9 @@ const NavbarWrapper = styled.nav`
   min-width: 100%;
   padding-bottom: 1.5rem;
 
-  @media (min-width: 35em) {
+  @media (min-width: 900px) {
     padding-top: 1rem;
+    margin-bottom: 3rem;
   }
 `;
 
@@ -51,7 +52,7 @@ const TitleWrapper = styled.div`
 
 const Title = styled.h1`
   color: var(--title-orange);
-  font-size: clamp(2rem, 3vw + 0.25rem, 4rem);
+  font-size: clamp(2rem, 3vw + 1rem, 3rem);
 
   padding: 1rem 0rem 0.5rem 0.2rem;
   margin: 0;

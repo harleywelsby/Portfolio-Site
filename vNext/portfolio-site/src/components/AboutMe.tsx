@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { zIndex } from '../shared/styles/styleConstants';
 import { useMediaQuery } from 'react-responsive';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function AboutMe() {
   const isBigScreen = useMediaQuery({ query: '(min-width: 700px)' });
@@ -24,22 +26,62 @@ function AboutMe() {
             <OrangeHighlight>React & .NET apps</OrangeHighlight>
             {` that solve problems & make a difference.`}
           </WelcomeText>
+          <ContactLinksHeader>
+            <b>Keen to connect?</b> You can find me here:
+          </ContactLinksHeader>
+          <ContactLinksWrapper>
+            <ContactLink
+              href="https://www.linkedin.com/in/harleywelsby/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="5x" />
+            </ContactLink>
+            <ContactLink
+              href="https://github.com/harleywelsby"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} size="5x" />
+            </ContactLink>
+          </ContactLinksWrapper>
         </>
       )}
       {isBigScreen && (
         <DesktopWrapper>
-          <WelcomeText>
-            {`Kia ora, I'm Harley. 👋`}
-            <br />
-            {`I'm a `}
-            <OrangeHighlight>Full-Stack Web Developer</OrangeHighlight>
-            {` based in Wellington, New Zealand.`}
-            <br />
-            <br />
-            {`I'm passionate about designing and developing `}
-            <OrangeHighlight>React & .NET apps</OrangeHighlight>
-            {` that solve problems & make a difference.`}
-          </WelcomeText>
+          <div>
+            <WelcomeText>
+              {`Kia ora, I'm Harley. 👋`}
+              <br />
+              {`I'm a `}
+              <OrangeHighlight>Full-Stack Web Developer</OrangeHighlight>
+              {` based in Wellington, New Zealand.`}
+              <br />
+              <br />
+              {`I'm passionate about designing and developing `}
+              <OrangeHighlight>React & .NET apps</OrangeHighlight>
+              {` that solve problems & make a difference.`}
+            </WelcomeText>
+            <ContactLinksHeader>
+              <b>Keen to connect?</b> You can find me here:
+            </ContactLinksHeader>
+            <ContactLinksWrapper>
+              <ContactLink
+                href="https://www.linkedin.com/in/harleywelsby/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedin} size="5x" />
+              </ContactLink>
+              <ContactLink
+                href="https://github.com/harleywelsby"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} size="5x" />
+              </ContactLink>
+            </ContactLinksWrapper>
+          </div>
           <ImageWrapper>
             <ProfilePicImage src="ProfilePic.webp" alt="Profile picture" />
           </ImageWrapper>
@@ -74,8 +116,7 @@ const WelcomeText = styled.p`
   border-radius: 1rem;
 
   height: fit-content;
-
-  width: 90%;
+  width: 85%;
 
   @media (min-width: 700px) {
     margin: 0 0 0 1rem;
@@ -107,6 +148,31 @@ const DesktopWrapper = styled.div`
 
   margin: 1rem 0;
   gap: 1rem;
+`;
+
+const ContactLinksHeader = styled.p`
+  color: var(--soft-white);
+  font-size: 1rem;
+  margin: 1rem;
+`;
+
+const ContactLinksWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
+
+const ContactLink = styled.a`
+  color: var(--soft-white);
+  text-decoration: none;
+  padding: 0.3rem;
+
+  font-weight: 500;
+  font-size: clamp(1rem, 2vw + 0.7rem, 1.5rem);
+
+  &:hover {
+    color: var(--title-orange);
+  }
 `;
 
 export default AboutMe;
