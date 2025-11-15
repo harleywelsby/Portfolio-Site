@@ -2,6 +2,13 @@ import styled from 'styled-components';
 import { zIndex } from '../shared/styles/styleConstants';
 
 function Navbar() {
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <NavbarWrapper>
       <TitleWrapper>
@@ -9,13 +16,13 @@ function Navbar() {
       </TitleWrapper>
       <NavbarList className="navbar-list">
         <li>
-          <NavbarItem href={'/'}>Skills</NavbarItem>
+          <NavbarItem onClick={() => scrollToSection('Skills')}>Skills</NavbarItem>
         </li>
         <li>
-          <NavbarItem href={'/'}>Experience</NavbarItem>
+          <NavbarItem onClick={() => scrollToSection('Experience')}>Experience</NavbarItem>
         </li>
         <li>
-          <NavbarItem href={'/'}>Research</NavbarItem>
+          <NavbarItem onClick={() => scrollToSection('Research')}>Research</NavbarItem>
         </li>
       </NavbarList>
     </NavbarWrapper>
@@ -72,7 +79,9 @@ const NavbarList = styled.ul`
   margin: 0;
 `;
 
-const NavbarItem = styled.a`
+const NavbarItem = styled.button`
+  all: unset;
+  cursor: pointer;
   color: var(--soft-white);
   text-decoration: none;
   padding: 0.3rem;

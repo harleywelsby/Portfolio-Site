@@ -33,7 +33,7 @@ function Skills() {
   return (
     <SectionOuterWrapper>
       <SectionWrapper>
-        <Title>Skills</Title>
+        <Title id="Skills">Skills</Title>
         <SkillCardsList>
           <SkillCard
             skill="React.js"
