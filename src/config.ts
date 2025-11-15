@@ -1,1 +1,1 @@
-export const SHOW_WORK_IN_PROGRESS = false;
+export const SHOW_WORK_IN_PROGRESS = true;

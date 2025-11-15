@@ -64,6 +64,10 @@ const TitleWrapper = styled.div`
 
   width: 90%;
   padding-bottom: 0.5rem;
+
+  @media (min-width: 35em) and (max-width: 900px) {
+    padding-top: 1rem;
+  }
 `;
 
 const Title = styled.h1`
@@ -74,7 +78,7 @@ const Title = styled.h1`
   margin: 0;
 
   @media (min-width: 35em) {
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem 0rem 1rem;
   }
 `;
 

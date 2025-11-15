@@ -1,11 +1,11 @@
-import styled from 'styled-components';
-import { zIndex } from '../shared/styles/styleConstants';
-import { useMediaQuery } from 'react-responsive';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import styled from "styled-components";
+import { zIndex } from "../shared/styles/styleConstants";
+import { useMediaQuery } from "react-responsive";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function AboutMe() {
-  const isBigScreen = useMediaQuery({ query: '(min-width: 700px)' });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 700px)" });
 
   return (
     <SectionWrapper>
@@ -131,6 +131,7 @@ const OrangeHighlight = styled.span`
 const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0 1rem;
   z-index: ${zIndex.AlwaysAtBack};
 `;
