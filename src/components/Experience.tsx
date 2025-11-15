@@ -5,7 +5,6 @@ import {
   TimelineSeparator,
 } from "@mui/lab";
 import styled from "styled-components";
-import { SHOW_WORK_IN_PROGRESS } from "../config";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBriefcase,
@@ -76,10 +75,6 @@ function ExperienceItem({
 }
 
 function Experience() {
-  if (!SHOW_WORK_IN_PROGRESS) {
-    return null;
-  }
-
   return (
     <SectionWrapper>
       <Title id="Experience">Experience</Title>

@@ -4,6 +4,7 @@ import "./shared/styles/App.css";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Research from "./components/Research";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Skills />
       <Experience />
       <Research />
+      <Footer />
     </>
   );
 }
