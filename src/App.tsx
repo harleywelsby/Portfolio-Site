@@ -1,37 +1,16 @@
-import { useEffect, useRef } from 'react';
-import HomeSection from './sections/Home/HomeSection';
-// import ResearchSection from './sections/Research/ResearchSection';
-import FooterSection from './sections/Footer/FooterSection';
-// import ProjectsSection from './sections/Projects/ProjectsSection';
-import ContactSection from './sections/Contact/ContactSection';
-import { SectionDivider } from './shared/styles/styledComponents';
+import AboutMe from './components/AboutMe';
+import Navbar from './components/Navbar';
+import './shared/styles/App.css';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
 
 function App() {
-  const observer = useRef<IntersectionObserver | null>(null);
-  useEffect(() => {
-    observer.current = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        } else {
-          entry.target.classList.remove('show');
-        }
-      });
-    });
-
-    const hiddenElements = document.querySelectorAll('.hidden');
-    hiddenElements.forEach((element) => observer.current!.observe(element));
-  }, []);
-
   return (
     <>
-      {/* <Navbar /> */}
-      <HomeSection />
-      <SectionDivider />
-      {/* <ProjectsSection />
-      <ResearchSection /> */}
-      <ContactSection />
-      <FooterSection />
+      <Navbar />
+      <AboutMe />
+      <Skills />
+      <Experience />
     </>
   );
 }

@@ -1,11 +1,12 @@
-import styled from 'styled-components';
-import { zIndex } from '../shared/styles/styleConstants';
+import styled from "styled-components";
+import { zIndex } from "../shared/styles/styleConstants";
+import { SHOW_WORK_IN_PROGRESS } from "../config";
 
 function Navbar() {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -14,17 +15,25 @@ function Navbar() {
       <TitleWrapper>
         <Title>Harley Welsby</Title>
       </TitleWrapper>
-      <NavbarList className="navbar-list">
-        <li>
-          <NavbarItem onClick={() => scrollToSection('Skills')}>Skills</NavbarItem>
-        </li>
-        <li>
-          <NavbarItem onClick={() => scrollToSection('Experience')}>Experience</NavbarItem>
-        </li>
-        <li>
-          <NavbarItem onClick={() => scrollToSection('Research')}>Research</NavbarItem>
-        </li>
-      </NavbarList>
+      {SHOW_WORK_IN_PROGRESS && (
+        <NavbarList className="navbar-list">
+          <li>
+            <NavbarItem onClick={() => scrollToSection("Skills")}>
+              Skills
+            </NavbarItem>
+          </li>
+          <li>
+            <NavbarItem onClick={() => scrollToSection("Experience")}>
+              Experience
+            </NavbarItem>
+          </li>
+          <li>
+            <NavbarItem onClick={() => scrollToSection("Research")}>
+              Research
+            </NavbarItem>
+          </li>
+        </NavbarList>
+      )}
     </NavbarWrapper>
   );
 }
