@@ -1,4 +1,45 @@
+import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
+
+interface ResearchPaperLinkProps {
+  title: string;
+  name: string;
+  institution: string;
+  logo: string;
+  logoHasBorderRadius?: boolean;
+  url: string;
+}
+
+function ResearchPaperLink({
+  title,
+  name,
+  institution,
+  logo,
+  logoHasBorderRadius,
+  url,
+}: ResearchPaperLinkProps) {
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 35em)" });
+
+  return (
+    <LinkWrapper href={url} target="_blank" rel="noopener noreferrer">
+      <LinkLogo src={logo} $withBorderRadius={logoHasBorderRadius} />
+      <div>
+        <LinkTitle>{title}</LinkTitle>
+        {!isSmallScreen && (
+          <Institution>
+            {name} • {institution}
+          </Institution>
+        )}
+        {isSmallScreen && (
+          <>
+            <Institution>{name}</Institution>
+            <Institution>{institution}</Institution>
+          </>
+        )}
+      </div>
+    </LinkWrapper>
+  );
+}
 
 function Research() {
   return (
@@ -19,37 +60,22 @@ function Research() {
           <br />
         </IntroParagraph>
         <SubHeader>You can find the results of my study here:</SubHeader>
-        <LinkWrapper
-          href="https://ojs.victoria.ac.nz/wfes/article/view/8424"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LinkLogo src="VUW.webp" />
-          <div>
-            <LinkTitle>
-              Understanding Sickness and Emotional Experiences in 360 Degree VR
-              Motion Simulators
-            </LinkTitle>
-            <Institution>
-              Harley Welsby • Victoria University of Wellington
-            </Institution>
-          </div>
-        </LinkWrapper>
+        <ResearchPaperLink
+          title="Understanding Sickness and Emotional Experiences in 360° VR Motion Simulators"
+          name="Harley Welsby"
+          institution="Victoria University of Wellington"
+          logo="VUW.webp"
+          url="https://ojs.victoria.ac.nz/wfes/article/view/8424/7478"
+        />
         <SubHeader>Cited by:</SubHeader>
-        <LinkWrapper
-          href="https://ojs.victoria.ac.nz/wfes/article/view/8424"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <LinkLogo src="UC.webp" />
-          <div>
-            <LinkTitle>
-              A Study on Cybersickness and Immersion in a VR game with
-              360-Degree Motion Simulator
-            </LinkTitle>
-            <Institution>Ziyang Zhang • University of Canterbury</Institution>
-          </div>
-        </LinkWrapper>
+        <ResearchPaperLink
+          title="A Study on Cybersickness and Immersion in a VR game with 360-Degree Motion Simulator"
+          name="Ziyang Zhang"
+          institution="University of Canterbury"
+          logo="UC.webp"
+          logoHasBorderRadius={true}
+          url="https://ir.canterbury.ac.nz/server/api/core/bitstreams/ee0805c8-250c-4774-a8fc-1eca4e4ad23f/content"
+        />
       </SectionWrapper>
     </SectionOuterWrapper>
   );
@@ -83,6 +109,11 @@ const IntroParagraph = styled.p`
   margin: 0;
   text-align: left;
   width: 80%;
+
+  @media (max-width: 35em) {
+    font-size: 1.1rem;
+    width: 90%;
+  }
 `;
 
 const SubHeader = styled.h2`
@@ -116,8 +147,13 @@ const LinkWrapper = styled.a`
   text-decoration: none;
 
   @media (max-width: 35em) {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
     padding: 1rem;
+    max-width: 80%;
   }
 
   &:hover {
@@ -126,13 +162,16 @@ const LinkWrapper = styled.a`
   }
 `;
 
-const LinkLogo = styled.img`
+const LinkLogo = styled.img<{ $withBorderRadius?: boolean }>`
   width: 100px;
   padding: 1rem;
-  border-radius: 2rem;
+  ${({ $withBorderRadius }) => $withBorderRadius && "border-radius: 2rem;"}
 
   @media (max-width: 35em) {
-    display: none;
+    width: 50px;
+    padding: 0;
+    margin: 0.2rem 0.8rem 0 0;
+    ${({ $withBorderRadius }) => $withBorderRadius && "border-radius: 1rem;"}
   }
 `;
 
@@ -142,6 +181,12 @@ const Institution = styled.p`
   margin: 0;
   text-align: left;
   width: 80%;
+
+  @media (max-width: 35em) {
+    width: 100%;
+    margin: 0rem 0 0.25rem 0;
+    font-size: 0.8rem;
+  }
 `;
 
 const LinkTitle = styled.h3`
@@ -154,6 +199,8 @@ const LinkTitle = styled.h3`
   @media (max-width: 35em) {
     width: 100%;
     margin: 0rem 0 0.25rem 0;
+    font-size: 1rem;
+    line-height: 1.2rem;
   }
 `;
 
