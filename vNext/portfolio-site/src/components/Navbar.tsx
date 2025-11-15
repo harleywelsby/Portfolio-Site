@@ -9,7 +9,7 @@ function Navbar() {
       </TitleWrapper>
       <NavbarList className="navbar-list">
         <li>
-          <NavbarItem href={'/'}>About</NavbarItem>
+          <NavbarItem href={'/'}>Skills</NavbarItem>
         </li>
         <li>
           <NavbarItem href={'/'}>Experience</NavbarItem>
@@ -36,7 +36,6 @@ const NavbarWrapper = styled.nav`
 
   @media (min-width: 35em) {
     padding-top: 1rem;
-    margin-bottom: 1rem;
   }
 `;
 
