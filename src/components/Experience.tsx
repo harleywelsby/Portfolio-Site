@@ -143,6 +143,7 @@ const ExperienceTitle = styled.h2`
   margin: 0 1rem;
   padding: 0;
   text-align: left;
+  line-height: 1.2rem;
 `;
 
 const Institution = styled.p`

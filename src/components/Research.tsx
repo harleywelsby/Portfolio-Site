@@ -58,6 +58,19 @@ function Research() {
           development of a web application to analyze data from participants.
           <br />
           <br />
+          This work was completed in cooperation with Victoria University's
+          Human Computer Interaction (HCI) research group, who also have a page
+          featuring my work alongside other students who have contributed to the
+          topic:{" "}
+          <InLineLink
+            href="https://ecs.wgtn.ac.nz/Groups/HCI/VR360DegreeMotionSimulation"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Understanding the Effectiveness of 360 Motion in VR Simulators
+          </InLineLink>
+          <br />
+          <br />
         </IntroParagraph>
         <SubHeader>You can find the results of my study here:</SubHeader>
         <ResearchPaperLink
@@ -202,6 +215,10 @@ const LinkTitle = styled.h3`
     font-size: 1rem;
     line-height: 1.2rem;
   }
+`;
+
+const InLineLink = styled.a`
+  color: var(--typescript-blue);
 `;
 
 export default Research;

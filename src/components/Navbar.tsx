@@ -60,7 +60,6 @@ const TitleWrapper = styled.div`
   align-items: center;
 
   width: 90%;
-  padding-bottom: 0.5rem;
 
   @media (min-width: 35em) and (max-width: 900px) {
     padding-top: 1rem;
