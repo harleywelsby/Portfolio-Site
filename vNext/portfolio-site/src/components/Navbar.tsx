@@ -36,7 +36,7 @@ const NavbarWrapper = styled.nav`
 
   @media (min-width: 35em) {
     padding-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 `;
 
