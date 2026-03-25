@@ -10,6 +10,7 @@ import {
   faBriefcase,
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
+import { useMediaQuery } from "react-responsive";
 
 interface SkillTagProps {
   skill: string;
@@ -42,8 +43,12 @@ function ExperienceItem({
   institution,
   startDate,
   endDate,
+  description,
   skills,
 }: ExperienceItemProps) {
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 768px)" });
+  const enableDescription = !!description && !isSmallScreen;
+
   return (
     <TimelineItem>
       <TimelineSeparator>
@@ -54,7 +59,12 @@ function ExperienceItem({
         />
         <TimelineConnector />
         <TimelineConnector />
-        <TimelineConnector />
+        {enableDescription && (
+          <>
+            <TimelineConnector />
+            <TimelineConnector />
+          </>
+        )}
       </TimelineSeparator>
       <ExperienceDetailsWrapper>
         <ExperienceTitle>{title}</ExperienceTitle>
@@ -62,6 +72,7 @@ function ExperienceItem({
         <Dates>
           {startDate} — {endDate}
         </Dates>
+        {enableDescription && <Description>{description}</Description>}
         {skills && (
           <Skills>
             {skills.map((skill, index) => (
@@ -81,33 +92,19 @@ function Experience() {
       <Timeline position="right">
         <ExperienceItem
           type="work"
-          title="Software Engineer"
+          title="Full-Stack Software Engineer"
           institution="Upstock"
           startDate="June 2025"
           endDate="Present"
+          description="As part of a small team in an early-stage startup, I wear many hats. In this role I've gained experience across .NET and React development, SQL databases, on-call production support and operations monitoring, and AWS infrastructure. It's common for tickets to come in as rough ideas or problems, and I turn them into well-structured solutions."
         />
         <ExperienceItem
           type="work"
-          title="Software Developer"
+          title="Full-Stack Software Developer"
           institution="PartsTrader"
           startDate="November 2021"
           endDate="June 2025"
-          // TODO:
-          // skills={[
-          //   { skill: "React.js", color: "var(--react-blue)" },
-          //   { skill: "TypeScript", color: "var(--typescript-blue)" },
-          //   { skill: ".NET", color: "var(--dotnet-purple)" },
-          //   {
-          //     skill: "SQL Server",
-          //     color: "var(--sql-server-yellow)",
-          //     textColor: "var(--soft-black)",
-          //   },
-          //   {
-          //     skill: "AWS",
-          //     color: "var(--aws-orange)",
-          //     textColor: "var(--soft-black)",
-          //   },
-          // ]}
+          description="Joining as an intern and progressing into a graduate role, my time at PartsTrader gave me early exposure to a wide range of development practices and design patterns. As part of a large cross-functional team, I was responsible for building and maintaining the PartsTrader web application using .NET, React and SQL Server, across both legacy and modern codebases."
         />
         <ExperienceItem
           type="education"
@@ -115,6 +112,7 @@ function Experience() {
           institution="Victoria University of Wellington"
           startDate="2020"
           endDate="2023"
+          description="Majoring in Software Engineering, my education at Victoria University laid the foundation for my career in software development. My final year involved a year-long research project where I designed and developed a VR game in C# for assessing motion sickness in full-body VR simulators, which you can find on my GitHub or read about below."
         />
       </Timeline>
     </SectionWrapper>
@@ -193,6 +191,14 @@ const SkillTagWrapper = styled.span<{ $color?: string; $textColor?: string }>`
 
   background-color: ${(props) => props.$color || "var(--soft-black)"};
   color: ${(props) => props.$textColor || "var(--soft-white)"};
+`;
+
+const Description = styled.p`
+  color: var(--soft-white);
+  font-size: 1rem;
+  margin: 0.2rem 1rem 0 1rem;
+  padding: 0;
+  text-align: left;
 `;
 
 export default Experience;

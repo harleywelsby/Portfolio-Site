@@ -1,4 +1,8 @@
-import type { IconDefinition, IconName, IconPrefix } from '@fortawesome/fontawesome-svg-core';
+import type {
+  IconDefinition,
+  IconName,
+  IconPrefix,
+} from "@fortawesome/fontawesome-svg-core";
 
 /**
  * Creates a custom icon for use with FontAwesome.
@@ -11,8 +15,8 @@ export const CustomIcon = (name: string, svgPath: string) => {
   // See here:
   // https://stackoverflow.com/questions/54417440/can-custom-icons-be-added-to-font-awesome-react
   return {
-    icon: [24, 24, [], '', svgPath],
+    icon: [24, 24, [], "", svgPath],
     iconName: name as IconName,
-    prefix: 'custom' as IconPrefix,
+    prefix: "custom" as IconPrefix,
   } as IconDefinition;
 };

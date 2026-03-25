@@ -24,12 +24,24 @@ interface SkillCardProps {
   experience: string;
   icon: IconDefinition;
   iconColor?: string;
+  iconPadding?: string;
 }
 
-function SkillCard({ skill, experience, icon, iconColor }: SkillCardProps) {
+function SkillCard({
+  skill,
+  experience,
+  icon,
+  iconColor,
+  iconPadding,
+}: SkillCardProps) {
   return (
     <SkillCardWrapper>
-      <FontAwesomeIcon icon={icon} size="3x" color={iconColor} />
+      <FontAwesomeIcon
+        icon={icon}
+        size="3x"
+        color={iconColor}
+        style={{ padding: iconPadding }}
+      />
       <div>
         <SkillCardTitle>{skill}</SkillCardTitle>
         <SkillCardDescription>{experience}</SkillCardDescription>
@@ -58,9 +70,10 @@ function Skills() {
           />
           <SkillCard
             skill="C# & .NET"
-            experience="4 years in industry"
+            experience="4 years in industry with a strong understanding of design patterns & REST API design"
             icon={CustomIcon("dotnet", DotNetIconPath)}
             iconColor="var(--dotnet-purple)"
+            iconPadding="0.35rem"
           />
           <SkillCard
             skill="SQL Server"
@@ -70,7 +83,7 @@ function Skills() {
           />
           <SkillCard
             skill="AWS"
-            experience="Experienced with ECS, EC2, IAM, CodeBuild, CodePipeline and more"
+            experience="Experienced with ECS, EC2, IAM, CodeBuild, CodePipeline & more"
             icon={faAws}
             iconColor="var(--aws-orange)"
           />
@@ -143,9 +156,12 @@ const SkillCardWrapper = styled.div`
     min-height: auto;
   }
 
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.05);
+  // TODO: This and the query above should be refactored to not double-up.
+  @media (min-width: 768px) {
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
   }
 `;
 
