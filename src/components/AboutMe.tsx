@@ -54,7 +54,7 @@ function AboutMe() {
               {`Kia ora, I'm Harley. 👋`}
               <br />
               {`I'm a `}
-              <OrangeHighlight>Full-Stack Web Developer</OrangeHighlight>
+              <OrangeHighlight>Full-Stack Software Engineer</OrangeHighlight>
               {` based in Wellington, New Zealand.`}
               <br />
               <br />
