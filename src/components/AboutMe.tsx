@@ -121,6 +121,7 @@ const WelcomeText = styled.p`
   @media (min-width: 700px) {
     margin: 0 0 0 1rem;
     padding: 1rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -134,6 +135,10 @@ const ImageWrapper = styled.div`
   align-items: center;
   padding: 0 1rem;
   z-index: ${zIndex.AlwaysAtBack};
+
+  @media (min-width: 700px) {
+    width: 135%;
+  }
 `;
 
 const ProfilePicImage = styled.img`
@@ -155,6 +160,10 @@ const ContactLinksHeader = styled.p`
   color: var(--soft-white);
   font-size: 1rem;
   margin: 1rem;
+
+  @media (min-width: 700px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const ContactLinksWrapper = styled.div`

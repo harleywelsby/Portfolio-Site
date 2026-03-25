@@ -126,7 +126,7 @@ const SectionWrapper = styled.div`
   align-items: center;
 
   max-width: 1000px;
-  margin: 2rem auto;
+  margin: 1rem auto 2rem auto;
 `;
 
 const Title = styled.h1`

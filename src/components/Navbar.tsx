@@ -25,6 +25,11 @@ function Navbar() {
             Experience
           </NavbarItem>
         </li>
+        {/* <li> // TODO
+          <NavbarItem onClick={() => scrollToSection("Projects")}>
+            Projects
+          </NavbarItem>
+        </li> */}
         <li>
           <NavbarItem onClick={() => scrollToSection("Research")}>
             Research
