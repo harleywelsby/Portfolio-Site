@@ -121,7 +121,7 @@ const WelcomeText = styled.p`
   @media (min-width: 700px) {
     margin: 0 0 0 1rem;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `;
 
@@ -137,7 +137,7 @@ const ImageWrapper = styled.div`
   z-index: ${zIndex.AlwaysAtBack};
 
   @media (min-width: 700px) {
-    width: 135%;
+    width: 114%;
   }
 `;
 
@@ -162,7 +162,7 @@ const ContactLinksHeader = styled.p`
   margin: 1rem;
 
   @media (min-width: 700px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `;
 
