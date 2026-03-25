@@ -6,7 +6,12 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { CustomIcon } from "./CustomIcon";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBrain,
+  faDatabase,
+  faFileSignature,
+  faForward,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const DotNetIconPath =
   "M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z";
@@ -65,9 +70,27 @@ function Skills() {
           />
           <SkillCard
             skill="AWS"
-            experience="Cloud Practitioner Certified"
+            experience="Experienced with ECS, EC2, IAM, CodeBuild, CodePipeline and more"
             icon={faAws}
             iconColor="var(--aws-orange)"
+          />
+          <SkillCard
+            skill="Exceptional Writing Skills"
+            experience="Able to write well-structured, clear documentation"
+            icon={faFileSignature}
+            iconColor="var(--soft-white)"
+          />
+          <SkillCard
+            skill="Easily Adaptable"
+            experience="Tech moves fast, and I move with it"
+            icon={faForward}
+            iconColor="var(--forward-red)"
+          />
+          <SkillCard
+            skill="Open-Minded"
+            experience="Always seeking new opinions and ideas"
+            icon={faBrain}
+            iconColor="var(--brain-pink)"
           />
         </SkillCardsList>
       </SectionWrapper>
@@ -110,12 +133,14 @@ const SkillCardWrapper = styled.div`
   padding: 1rem;
   border-radius: 1rem;
 
-  width: 50%;
+  width: 90%;
+  min-height: 4.5rem;
 
   background-color: var(--soft-black);
 
   @media (max-width: 768px) {
     width: 80%;
+    min-height: auto;
   }
 
   &:hover {
@@ -143,6 +168,12 @@ const SkillCardsList = styled.div`
   flex-direction: column;
   width: 100%;
   gap: 0.5rem;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
 `;
 
 export default Skills;
